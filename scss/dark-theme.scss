@@ -1,0 +1,402 @@
+/*-------------------------------
+    Dark Theme  CSS
+-------------------------------*/
+
+//Color Variable
+$clr_white: #fff;
+$clr_offwhite: rgba(255,255,255,0.8);
+$clr_black: #000;
+$clr_cod: #222;
+$clr_orange:#22c3a0;
+$clr_shaft:#2F2F2F;
+$clr_red:#22c3a0;
+$clr_midnight:#012245;
+$clr_thunder:#201D1E;
+$clr_tundora:#4C4C4C;
+$clr_scorpion:#626061;
+$clr_minsk:#3F3A7F;
+$clr_yellow:#FFC107;
+$clr_heath:#F3F6FB;
+$clr_grey: #ddd;
+$clr_ash: #818181;
+$clr_tangaroa: #031236;
+
+.switch-theme-mode{
+    position: fixed;
+    top: 200px;
+    right: 20px;
+    z-index: 999999;
+}
+.theme-light {
+    body{
+        background-color: $clr_white;
+    }
+}
+.theme-dark {
+    body{
+        background-color: $clr_black;
+    }
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    &.round {
+        border-radius: 34px;
+        &:before{
+            border-radius: 50%;
+        }
+    }
+    &:before {
+        position: absolute;
+        content: "";
+        height: 40px;
+        width: 40px;
+        left: 0px;
+        bottom: 4px;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+        box-shadow: 0 0px 15px #2020203d;
+        background: white url('https://i.ibb.co/7JfqXxB/sunny.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+input:checked + .slider {
+  background-color: $clr_black;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px  $clr_black;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(24px);
+  -ms-transform: translateX(24px);
+  transform: translateX(24px);
+  background: white url('https://i.ibb.co/FxzBYR9/night.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*---------------------------------
+    Color CSS For Elements 
+-----------------------------------*/
+.theme-light {
+    .comp-logo,
+    .logo{
+        .logo-dark{
+            display: none!important;
+        }
+        .logo-light{
+            display: block!important;
+        }
+    }
+}
+
+.theme-dark {
+    .comp-logo,
+    .logo{
+        .logo-light{
+            display: none!important;
+        }
+        .logo-dark{
+            display: block!important;
+        }
+    }
+    .body,
+    .bg-midnight{
+        background-color: $clr_black;
+    }
+    .hero-wrap.style3 .hero-content-wrap .overlay.bg-white{
+        background-color: $clr_black!important;
+    }
+    .blog-card,
+    .contact-popup.open,
+    .header-wrap .header-bottom,
+    .about-wrap .about-content.style2,
+    .team-member.style2,
+    .instructor-form,
+    .header-search .form-group input,
+    #contactForm input,
+    #contactForm textarea,
+    .comment-form-wrap .comment-form .form-group input,
+    .comment-form-wrap .comment-form .form-group textarea,
+    .checkout .form-group input,
+    .checkout .form-group textarea,
+    .cart-popup,
+    .footer-wrap .footer-top{
+        background-color: $clr_black;
+    }
+    .footer-wrap .footer-top{
+        border-top: 1px solid rgba(255,255,255,0.15);
+    }
+    .promo-banner-wrap .promo-content::before,
+    .promo-video-wrap::after,
+    .ds-wrap::after,
+    .newsletter-wrap .form-group input,
+    .blog-wrap,
+    .team-member,
+    .feature-item,
+    .nav.nav-tabs.course-tablist li button,
+    .course-tab-content .accordion-button[aria-expanded="true"],
+     .course-tab-content .accordion-button[aria-expanded="false"],
+     .tab-content.course-tab-content .lecture-accordion,
+     .social-profile.style2 li a,
+     .course-card.style3,
+     .contact-address,
+     .pricing-box-wrap .pricing-box,
+     .accordion-item,
+     .accordion-item .accordion-header .accordion-button,
+     .blog-card.style2,
+     .content-wrapper .post-content .wp-block-quote,
+     .nav-tabs .nav-item .nav-link,
+     .comment-form-wrap .comment-form-title,
+     .product-category-list li.has-subcat > a span,
+    .footer-wrap .footer-bottom{
+        background-color: $clr_cod;
+    }
+    .nav.nav-tabs.course-tablist li  button.active{
+        background-color: $clr_orange;
+    }
+    .wishlist-table table tbody tr td{
+        background-color: transparent;
+    }
+    .wishlist-table table thead tr {
+        border-bottom: none;
+    }
+    h2,h3,h4,h5,h6,
+    .hero-wrap.style3 .hero-content-wrap .hero-content h1,
+    .section-title h2,
+    .about-wrap .about-content h5,
+    .blog-card .blog-info h3 a,
+    .sidebar-menu i,
+    .mobile-top-bar i,
+    .main-menu-wrap.style1 #menu > ul > li >a,
+    .testimonial-item .quote-icon i,
+    .team-member .team-member-info h4,
+    .course-card .course-info h3 a,
+    .feature-item h5 a,
+    .comment-author_info h6,
+    .project-details-para h4,
+    .team-member.style2 .team-member-info h4 a,
+    .insructor-tab-content .instructor-title,
+    .tab-content.course-tab-content h5,
+    .nav.nav-tabs.course-tablist li button,
+    .form-group input,
+    .form-group textarea,
+    #contactForm input,
+    #contactForm textarea,
+    .contact-address .contact-info h5,
+    .course-details-widget.sidebar-box h5,
+    .accordion-item .accordion-header .accordion-button,
+    .search-box input,
+    .sidebar .sidebar-widget h4,
+    .pp-post-item .pp-post-info h6 a,
+    .ecour-faq .accordion-item .accordion-header .accordion-button[aria-expanded="true"],
+    .pp-content h4,
+    .error-content h2,
+    .error-content h4,
+    .category-box ul li a,
+    .content-wrapper .post-content .post-subtitle,
+    .post-author-info h4,
+     .post-tag span, .post-share span,
+     .social-profile li a i,
+     .post-comment-wrap.style2 .comment-title,
+     .comment-form-wrap .comment-form-title.style2 h4,
+     .comment-form.style2 label,
+     .login-form .login-body label,
+     .checkout .form-group input,
+     .checkout .form-group textarea,
+     .wishlist-table table tbody tr td .wh-tem-price,
+     .form-group .or,
+    .product-quantity .qtySelector input,
+     .wishlist-table table tbody td a,
+     .product-quantity .qtySelector span,
+     .total-wrap span,
+     .product-card:hover .product-info h4 a,
+     .nav-tabs .nav-item .nav-link,
+     .nav-tabs .nav-link.active,
+     .new-product-item .new-product-info h6 a,
+     .product-card .product-info h4 a,
+     .product-category-list li.has-subcat > a,
+     .cart-popup .cart-popup-item-wrap .cart-popup-item .cart-popup-item-price button i,
+     .cart-popup .close-popup i,
+     .mobile-menu a i {
+         color: $clr_white!important;
+    }
+    p,
+    .hero-wrap.style3 .hero-content-wrap .hero-content p,
+    .section-title p,
+    .content-title p,
+    .feature-item p,
+    .about-features-list li,
+    .course-card .course-info p,
+    .course-card .course-metainfo p,
+    .course-card .course-metainfo p a,
+    .team-member .team-member-info p,
+    .course-details-widget ul li p,
+    .tab-content.course-tab-content p,
+    .tab-content.course-tab-content ul.course-details-list li,
+    .post-comment-wrap .comment-item .comment-author_text p,
+    .course-details-meta li,
+    .insructor-tab-content p,
+    .project-details-para p,
+    .contact-address .contact-info p,
+    .contact-address .contact-info a,
+    .insructor-tab-content span,
+    .insructor-tab-content .footer-contact-address li a,
+    .insructor-tab-content .footer-contact-address li p,
+    .course-rating span,
+    .content-wrapper .post-content .wp-block-quote p,
+    .checkbox label,
+    .checkout label,
+    .pricing-box-wrap .pricing-box .price-tag h3 span,
+    .pricing-box-wrap .pricing-box .price-box-features li,
+    .accordion-body p,
+    .pp-content p,
+    .error-content p,
+    .tag-list ul li a,
+    .footer-contact-address li a,
+    .footer-contact-address li,
+    .footer-contact-address li p,
+    .page-navigation .page-nav li a,
+    .pp-post-item .pp-post-info span,
+    .content-wrapper .post-content p,
+    .post-author-info p,
+    .comment-form-wrap .comment-form-title.style2 p,
+    .select-method [type="radio"]:checked + label,
+    .select-method [type="radio"]:not(:checked) + label,
+    .bill-item .bill-item-price span,
+    .subtotal-item-right span,
+    .single-product-details .single-product-desc p,
+    .comment-form-wrap .comment-form .checkbox label,
+    #amount_one,
+    .blog-card .blog-info p{
+        color: $clr_offwhite;
+    }
+    .footer-wrap .footer-top .footer-widget .social-profile li a i,
+    .course-card .course-metainfo p i{
+        color: $clr_orange!important;
+    }
+    .course-rating span:before{
+        background: rgba(255,255,255,0.19);
+    }
+    .blog-card .blog-info .read-more i,
+    .feature-item a,
+    .main-menu-wrap.style1 #menu > ul > li > a.active,
+    .main-menu-wrap.style1 #menu > ul > li > a:hover{
+        color: $clr_orange;
+    }
+    
+    .instructor-form,
+    .form-group input,
+    .form-group textarea,
+    #contactForm input,
+    #contactForm textarea,
+    .comment-form-wrap .comment-form .form-group input,
+    .comment-form-wrap .comment-form .form-group textarea,
+    .search-box input,
+    .comment-form-wrap .comment-form .form-group input,
+    .comment-form-wrap .comment-form .form-group textarea,
+    .sidebar .sidebar-widget,
+    .page-navigation .page-nav li a,
+    .login-form .login-body,
+    .checkout .form-group input,
+    .checkout .form-group textarea,
+    .bill-details,
+    .product-card,
+    .product-large-img,
+    .product-thumb,
+    .cart-popup .cart-popup-item-wrap .cart-popup-item .cart-popup-item-price button i,
+     .cart-popup .close-popup i,
+    .sidebar-box {
+        border: 1px solid rgba(255,255,255,0.19)!important;
+    }
+    .course-card .course-metainfo{
+        border-top: 1px solid rgba(255,255,255,0.19);
+    }
+    .tab-content.course-tab-content,
+    .accordion-item .accordion-header .accordion-button,
+    .tab-content.course-tab-content .lecture-accordion,
+    .tab-content.course-tab-content .lecture-item,
+    .accordion-item,
+    .header-search .form-group button,
+    .course-card.style3 .course-info,
+    .pricing-box-wrap .pricing-box .price-tag,
+    .post-author,
+    .content-wrapper article,
+    .post-comment-wrap.style2 .comment-item,
+    .bill-item-wrap,
+    .cart-popup .cart-popup-title,
+    .wishlist-table table thead tr th,
+    .wishlist-table table tbody tr td,
+    .product-quantity .qtySelector,
+    .product-quantity .qtySelector input,
+    .wishlist-table table tbody tr,
+    .product-category-list li.has-subcat > a,
+    .cart-popup .cart-popup-total-wrap .cart-popup-total,
+    .nav.nav-tabs.course-tablist li{
+        border-color:rgba(255,255,255,0.19);
+    }
+    .wishlist-table table thead tr{
+        border-top: none;
+    }
+    .ecour-faq .accordion-button[aria-expanded="true"]::after,
+    .accordion-button::after{
+        border-color: $clr_white;
+    }
+    .course-card.style1,
+    .course-card.style2 {
+        border: 1px solid rgba(255,255,255,0.19);
+    }
+    .blog-author-wrap {
+        border-top: 1px solid rgba(255,255,255,0.19);
+        padding-top: 28px;
+    }
+    .feature-item a span::after {
+       background-color: rgba(255,255,255,0.19);
+    }
+    .testimonial-item {
+        background: rgba(0, 0, 0, 0.35);
+    }
+    .feature-item {
+        border-right: 1px solid rgba(255,255,255,0.19);
+    }
+    h3{
+        a{
+            &:hover{
+                color: $clr_orange!important;
+            }
+        }
+    }
+    .course-card.style3 .course-metainfo{
+        border: none;
+    }
+}
+@media screen  and (max-width:991px){
+    .theme-dark{
+        .header-wrap .main-menu-wrap.style1 #menu .main-menu  li a{
+            color: $clr_black!important;
+        }
+    }
+}

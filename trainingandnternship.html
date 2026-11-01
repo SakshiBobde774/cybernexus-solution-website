@@ -1,0 +1,1653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--====== Title ======-->
+    <title>CyberNexus</title>
+
+    <!--====== Google Fonts ======-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="img/favicon.jpg" type="image/jpg">
+
+    <!--====== Bootstrap css ======-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--====== Jquery UI css ======-->
+    <link href="css/jquery-ui.min.css" rel="stylesheet">
+    <!--====== icon css ======-->
+    <link href="css/line-awesome.min.css" rel="stylesheet">
+    <link href="css/remixicon.css" rel="stylesheet">
+    <!--====== Animate  css ======-->
+    <link href="css/animate.min.css" rel="stylesheet">
+    <!--====== Swiper css ======-->
+    <link href="css/swiper.min.css" rel="stylesheet">
+    <!--====== Style css ======-->
+    <link href="scss/style.css" rel="stylesheet">
+
+    <link href="css/trainingandinternship.css" rel="stylesheet">
+
+    <!----------------icons------------------------------>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://icons8.com">
+
+    <!-- Include FontAwesome for Social Icons (Put this in your HTML <head> if not already present) -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <!-- Include Google Font for Signature -->
+    <link rel="stylesheet" href="https://googleapis.com">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/line-awesome@1.3.0/dist/line-awesome/css/line-awesome.min.css">
+
+    <!-- <style>
+        
+        </style> -->
+</head>
+
+<body>
+    <div id="formToast" class="form-toast" role="status" aria-live="polite" aria-atomic="true" hidden>
+        <span class="form-toast__icon" aria-hidden="true"></span>
+        <div class="form-toast__content">
+            <strong id="formToastTitle">Application update</strong>
+            <span id="formToastMessage"></span>
+        </div>
+        <button type="button" class="form-toast__close" id="formToastClose"
+            aria-label="Dismiss notification">&times;</button>
+    </div>
+    <!-- Theme Switcher Start -->
+    <div class="switch-theme-mode">
+        <label id="switch" class="switch">
+            <input type="checkbox" onchange="toggleTheme()" id="slider">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <div class="page-wrapper">
+        <header class="header-wrap style1">
+            <!----------------------------top header----------------------->
+            <div class="header-top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7"> 
+                            <div class="header-top-left">
+                                <div class="close-header-top xl-none">
+                                    <button type="button"><i class="las la-times"></i></button>
+                                </div>
+                                <div class="header-contact me-3">
+                                    <p class="mb-0"><i class="ri-map-pin-fill"></i> Nagpur, Maharashtra</p>
+                                </div>
+                                <div class="header-contact me-3"
+                                    style="border: none !important; padding-right: 0 !important;">
+                                    <a href="mailto:info@cybernexussolution.in">
+                                        <i class="ri-mail-send-line"></i>info@cybernexussolution.in
+                                    </a>
+                                </div>
+                                <div class="header-contact d-flex align-items-center">
+                                    <span class="text-white-50 me-3">|</span>
+                                    <a href="tel:+918308626961">
+                                        <i class="ri-phone-fill"></i> +91 8308626961
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5">
+                            <div class="header-top-right">
+                                <div class="lang_selctor style1">
+                                    <i class="ri-global-line"> </i>
+                                    <select>
+                                        <option value="1">English</option>
+                                    </select>
+                                </div>
+                                <div class="header-social">
+                                    <span>Follow us :</span>
+                                    <ul class="social-profile style3">
+                                        <li><a target="_blank" href="#"><i class="ri-facebook-fill"></i> </a></li>
+                                        <li><a target="_blank" href="https://linkedin.com"><i
+                                                    class="ri-linkedin-fill"></i> </a></li>
+                                        <li><a target="_blank" href="https://twitter.com"><i
+                                                    class="ri-twitter-fill"></i> </a></li>
+                                        <li><a target="_blank" href="https://instagram.com"><i
+                                                    class="ri-instagram-line"></i> </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 xl-none">
+                            <div class="header-search">
+                                <form action="#">
+                                    <div class="form-group">
+                                        <input type="search" placeholder="Search Here ..." aria-label="Search this page"
+                                            required>
+                                        <button type="submit"><i class="ri-search-eye-line"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!---------------main header------------------------>
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-2 col-md-4 col-6 order-lg-1 order-md-1 order-1">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img class="logo-light" src="./img/secondlogo.jpg" alt="Image">
+                                    <!-- <img class="logo-dark" src="img/logo-white.png" alt="Image"> -->
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-3 col-6 order-lg-2 order-md-3 order-3">
+                            <div class="main-menu-wrap style1">
+                                <div class="menu-close xl-none">
+                                    <a href="javascript:void(0)"><i class="las la-times"></i></a>
+                                </div>
+                                <div id="menu" class="text-left">
+                                    <ul class="main-menu ">
+                                        <li>
+                                            <a href="index.html">HOME</a>
+                                        </li>
+                                        <li>
+                                            <a href="Aboutpage.html">ABOUT</a>
+                                        </li>
+                                        <li>
+                                            <a href="trainingandnternship.html" class="active">Training &
+                                                Internships</a>
+                                        </li>
+                                        <li><a href="blogs.html">BLOGS</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mobile-bar-wrap">
+                                <div class="sidebar-menu xl-none">
+                                    <i class="ri-equalizer-line"></i>
+                                </div>
+                                <div class="mobile-top-bar xl-none">
+                                    <i class="ri-settings-3-line"></i>
+                                </div>
+                                <div class="mobile-menu xl-none">
+                                    <a href='javascript:void(0)'><i class="ri-menu-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-5  order-lg-3 order-md-2">
+                            <div class="header-menu-wrap">
+                                <div class="header-search md-none">
+                                    <form action="#">
+                                        <div class="form-group">
+                                            <input type="search" placeholder="Search Here ..."
+                                                aria-label="Search this page" required>
+                                            <button type="submit"> <i class="ri-search-eye-line"></i> </button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="sidebar-menu md-none">
+                                    <i class="ri-equalizer-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-------------header close--------------------->
+
+
+        <div class="body_overlay"></div>
+        <div class="contact-popup">
+            <div class="contact-popup-title">
+                <button type="button" class="close-popup"> <i class="ri-close-fill"></i> </button>
+            </div>
+            <div class="contact-popup-wrap">
+                <div class="comp-info">
+                    <div class="comp-logo">
+                        <a href="index.html">
+                            <img class="logo-light" src="img/secondlogo.jpg" alt="Image">
+                            <img class="logo-dark" src="img/logo-white.png" alt="Image">
+                        </a>
+                    </div>
+                    <p class="comp-desc">Empowering students and professionals with industry-ready skills, practical
+                        training, and real-world internship experiences to launch successful tech careers.</p>
+                    <ul class="footer-contact-address">
+                        <li><a href="tel:7498641386"> <i class="ri-phone-line"></i>+91 8308626961</a></li>
+                        <li> <i class="ri-mail-send-fill"></i> <a
+                                href="mailto:info@cybernexussolution.in">info@cybernexussolution.in</span></a></li>
+                        <!-- <li> <i class="ri-earth-fill"></i> <a href="https://www.ecour.com">www.ecour.com</a></li> -->
+                        <li>
+                            <i class="ri-map-pin-fill"></i> 1st Floor, Plot No. 4, Shivdatta Apartment, Mankapur Ring
+                            Rd, Nagpur, Maharashtra 440022
+                        </li>
+                    </ul>
+                </div>
+                <div class="comp-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.961127608986!2d79.04113527479835!3d21.11411588484238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bf6ac8fe2581%3A0x64053ccc6c891b29!2sCYBERATHON!5e0!3m2!1sen!2sin!4v1699445004863!5m2!1sen!2sin"></iframe>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="breadcrumb-wrap bg-f training-banner-bg">
+            <div class="overlay op-6 bg-black"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 col-md-10 offset-md-1">
+                        <div class="breadcrumb-title">
+                            <h2>Training / Internships</h2>
+                            <ul class="breadcrumb-menu">
+                                <li><a href="index.html">Home</a></li>
+                                <li>Internship</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-one blog-one--blog">
+            <div class="container">
+                <div class="row">
+                    <div id="php-development" class="col-xl-4 col-lg-4 wow fadeInUp animated" data-wow-delay=".3s"
+                        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                        <div class="blog-one__single">
+                            <div class="blog-one__single-img">
+                                <img src="img/php.png" alt="img-tech">
+                            </div>
+                            <div class="blog-one__single-content">
+                                <ul class="meta-box"></ul>
+                                <h2>PHP Development </h2>
+                                <div class="btn-box">
+                                    <a href="javascript:void(0)" class="btn enroll-btn" data-toggle="modal"
+                                        data-target="#CourseModal1" data-id="11" data-heading="PHP Development">
+                                        Enroll Now
+                                    </a>
+                                    <!-- Details Button -->
+                                    <button class="btn details-btn" data-toggle="modal" data-target="#detailsModal11">
+                                        Details
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Internship application popup -->
+                    <div id="formModal" class="modal" role="dialog" aria-modal="true"
+                        aria-labelledby="internshipFormTitle" aria-hidden="true">
+                        <div class="modal-content" role="document">
+                            <button type="button" class="close-btn" id="closeFormModal"
+                                aria-label="Close application form">&times;</button>
+
+                            <div class="form-header">
+                                <h2 id="internshipFormTitle">Apply for an internship</h2>
+                                <p id="selectedCourseHint">Complete the form and we will get in touch with you.</p>
+                            </div>
+
+                            <div id="successMessage" class="form-feedback form-feedback--success" role="status"
+                                aria-live="polite" aria-atomic="true" tabindex="-1" hidden>
+                                <span class="feedback-icon" aria-hidden="true"></span>
+                                <div class="feedback-copy">
+                                    <strong>Application submitted successfully</strong>
+                                    <p id="successMessageText">Thank you for applying. Our team will contact you soon.
+                                    </p>
+                                    <button type="button" class="feedback-action" id="successDoneBtn">Done</button>
+                                </div>
+                            </div>
+
+                            <div id="formError" class="form-feedback form-feedback--error" role="alert"
+                                aria-live="assertive" tabindex="-1" hidden>
+                                <span class="feedback-icon" aria-hidden="true"></span>
+                                <div class="feedback-copy">
+                                    <strong>We could not submit your application</strong>
+                                    <p id="formErrorText">Please check your connection and try again.</p>
+                                </div>
+                            </div>
+
+                            <form id="internshipForm" action="https://formsubmit.co/ajax/info@cybernexussolution.in"
+                                method="POST" enctype="multipart/form-data">
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_subject" value="New Website Internship Application">
+                                <input type="hidden" name="_template" value="table">
+                                <input class="form-honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off"
+                                    aria-hidden="true">
+
+                                <div class="form-row">
+                                    <div class="form-field">
+                                        <label for="applicantName">Full name <span class="required-mark"
+                                                aria-hidden="true">*</span></label>
+                                        <input id="applicantName" type="text" name="Name"
+                                            placeholder="Enter your full name" autocomplete="name" required>
+                                    </div>
+                                    <div class="form-field">
+                                        <label for="applicantPhone">Phone number <span class="required-mark"
+                                                aria-hidden="true">*</span></label>
+                                        <input id="applicantPhone" type="tel" name="Phone"
+                                            placeholder="Enter your phone number" autocomplete="tel" inputmode="tel"
+                                            pattern="[0-9+()\-\s]{10,}" title="Enter a valid phone number" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-field">
+                                        <label for="applicantEmail">Email address <span class="required-mark"
+                                                aria-hidden="true">*</span></label>
+                                        <input id="applicantEmail" type="email" name="email"
+                                            placeholder="Enter your email address" autocomplete="email" required>
+                                    </div>
+                                    <div class="form-field">
+                                        <label for="applicantCity">City <span class="required-mark"
+                                                aria-hidden="true">*</span></label>
+                                        <input id="applicantCity" type="text" name="City" placeholder="Enter your city"
+                                            autocomplete="address-level2" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-field">
+                                    <label for="courseSelect">Course <span class="required-mark"
+                                            aria-hidden="true">*</span></label>
+                                    <select id="courseSelect" name="Course" required>
+                                        <option value="" selected disabled>Select a course</option>
+                                        <option value="PHP Development">PHP Development</option>
+                                        <option value="Dot Net Development">Dot Net Development</option>
+                                        <option value="Digital Marketing">Digital Marketing</option>
+                                        <option value="Graphic Designing">Graphic Designing</option>
+                                        <option value="MERN Stack">MERN Stack</option>
+                                        <option value="MEAN Stack">MEAN Stack</option>
+                                        <option value="HR Internship">HR Internship</option>
+                                        <option value="Android Development">Android Development</option>
+                                        <option value="Data Analytics">Data Analytics</option>
+                                        <option value="Java Development">Java Development</option>
+                                        <option value="Python Development">Python Development</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-field">
+                                    <label for="fileChooser">Resume <span class="required-mark"
+                                            aria-hidden="true">*</span></label>
+                                    <div class="file-upload">
+                                        <input type="file" name="Resume" id="fileChooser"
+                                            accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                                            aria-required="true" hidden>
+                                        <button type="button" id="customFileBtn" aria-describedby="resumeHelp">Choose
+                                            resume</button>
+                                        <span id="fileName" aria-live="polite">No file chosen</span>
+                                    </div>
+                                    <small id="resumeHelp" class="form-help">Upload a PDF or Word file, up to 10
+                                        MB.</small>
+                                </div>
+
+                                <div class="form-field">
+                                    <label for="applicantMessage">Message <span
+                                            class="form-help">(optional)</span></label>
+                                    <textarea id="applicantMessage" name="Message"
+                                        placeholder="Tell us anything relevant to your application" rows="4"></textarea>
+                                </div>
+
+                                <label class="consent-label">
+                                    <input type="checkbox" name="Consent"
+                                        value="I confirm that the details provided are correct" required>
+                                    <span>I confirm that the details provided above are correct.</span>
+                                </label>
+
+                                <button type="submit" class="submit-btn" id="submitBtn">
+                                    <span class="submit-btn__text">Submit application</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Dynamic Modal -->
+
+                    <!-- Dynamic Modal -->
+                    <div class="modal fade" id="detailsModal11" tabindex="-1" role="dialog">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                            <div class="modal-content" style="border:10px solid #22c3a0;">
+                                <div class="modal-body">
+                                    <!-- Heading -->
+                                    <div
+                                        style="border:4px solid #22c3a0; background-color:#22c3a0; padding:10px; border-radius:5px; margin-bottom:20px;">
+                                        <h3 style="margin:0; color:white; text-align:center;">
+                                            PHP Development
+                                        </h3>
+                                    </div>
+
+                                    <div style="padding:10px; border-radius:5px; margin-bottom:20px;">
+                                        <!-- Web Design -->
+                                        <h4 style="color:#22c3a0; margin-bottom:5px; font-size:30px;">
+                                            Web Design
+                                        </h4>
+                                        <ul style="list-style-type:square; padding-left:50px;">
+                                            <li style="font-size:22px;">
+                                                HTML &amp; Semantic Markup
+                                            </li>
+                                            <li style="font-size:22px;">
+                                                CSS &amp; Responsive Styling
+                                            </li>
+                                            <li style="font-size:22px;">
+                                                Bootstrap Framework
+                                            </li>
+                                            <li style="font-size:22px;">
+                                                JavaScript &amp; Interactive UI
+                                            </li>
+                                        </ul>
+
+                                        <!-- Development -->
+                                        <h4 style="color:#22c3a0; margin-bottom:5px; font-size:30px;">
+                                            Development
+                                        </h4>
+                                        <ul style="list-style-type:square; padding-left:50px;">
+                                            <li style="font-size:22px;">
+                                                Core PHP &amp; Server-Side Scripting
+                                            </li>
+                                            <li style="font-size:22px;">
+                                                CodeIgniter Framework
+                                            </li>
+                                        </ul>
+
+                                        <!-- Database -->
+                                        <h4 style="color:#22c3a0;margin-bottom:5px; font-size:30px;">
+                                            Database
+                                        </h4>
+                                        <ul style="list-style-type:square; padding-left:50px;">
+                                            <li style="font-size:22px;">
+                                                MySQL Database
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--<div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay=".3s">-->
+                    <div id="dot-net-development" class="col-xl-4 col-lg-4 wow fadeInUp animated" data-wow-delay=".3s"
+                        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                        <div class="blog-one__single">
+                            <div class="blog-one__single-img">
+                                <img src="img/dotnet.png" alt="img-tech">
+                            </div>
+                            <div class="blog-one__single-content">
+                                <ul class="meta-box"></ul>
+                                <h2>
+                                    Dot Net Development </h2>
+                                <div class="btn-box">
+                                    <!-- Enroll Button -->
+                                    <!--<a data-toggle="modal" data-target="#CourseModal1" class="btn">-->
+                                    <!--    Enroll Now-->
+                                    <!--</a>-->
+                                    <a href="javascript:void(0)" class="btn enroll-btn" data-toggle="modal"
+                                        data-target="#CourseModal1" data-id="12" data-heading="Dot Net Development">
+                                        Enroll Now
+                                    </a>
+                                    <!-- Details Button -->
+                                    <button class="btn details-btn" data-toggle="modal" data-target="#detailsModal12">
+                                        Details
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dynamic Modal -->
+
+                    <!-- Dynamic Modal -->
+                    <div class="modal fade" id="detailsModal12" tabindex="-1" role="dialog">
+
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+
+                            <div class="modal-content" style="border:10px solid #22c3a0;">
+
+                                <div class="modal-body">
+
+                                    <!-- Heading -->
+                                    <div
+                                        style="border:4px solid #22c3a0; background-color:#22c3a0; padding:10px; border-radius:5px; margin-bottom:20px;">
+
+                                        <h3 style="margin:0; color:white; text-align:center;">
+                                            Dot Net Development
+                                        </h3>
+                                    </div>
+                                    <div style="padding:10px; border-radius:5px; margin-bottom:20px;">
+                                        <!-- Web Design -->
+                                        <h4 style="color:#22c3a0; margin-bottom:5px; font-size:30px;">
+                                            Web Design
+                                        </h4>
+                                        <ul style="list-style-type:square; padding-left:50px;">
+                                            <li style="font-size:22px;">
+                                                HTML &amp; Semantic Markup
+                                            </li>
+                                            <li style="font-size:22px;">
+                                                CSS &amp; Responsive Styling
+                                            </li>
+                                            <li style="font-size:22px;">
+                                                Bootstrap Framework
+                                            </li>
+                                            <li style="font-size:22px;">
+                                                JavaScript &amp; Interactive UI
+                                            </li>
+                                        </ul>
+                                        <!-- Development -->
+                                        <h4 style="color:#22c3a0; margin-bottom:5px; font-size:30px;">
+                                            Development
+                                        </h4>
+                                        <ul style="list-style-type:square; padding-left:50px;">
+                                            <li style="font-size:22px;">
+                                                C# programming
+                                            </li>
+                                            <li style="font-size:22px;">
+                                                ASP.NET Web Form
+                                            </li>
+                                            <li style="font-size:22px;">
+                                                ASP.NET Razor Pages
+                                            </li>
+                                            <li style="font-size:22px;">
+                                                ASP.net
+                                            </li>
+                                            <li style="font-size:22px;">
+                                                ADO.net
+                                            </li>
+                                            <li style="font-size:22px;">
+                                                ASP.net entity Framework
+                                            </li>
+                                            <li style="font-size:22px;">
+                                                .NET Core
+                                            </li>
+                                        </ul>
+                                        <!-- Database -->
+                                        <h4 style="color:#22c3a0; margin-bottom:5px; font-size:30px;">
+                                            Database
+                                        </h4>
+                                        <ul style="list-style-type:square; padding-left:50px;">
+                                            <li style="font-size:22px;">
+                                                MySQL Database
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--<div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay=".3s">-->
+                    <div id="digital-marketing" class="col-xl-4 col-lg-4 wow fadeInUp animated" data-wow-delay=".3s"
+                        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                        <div class="blog-one__single">
+                            <div class="blog-one__single-img">
+                                <img src="img/digital marketing.png" alt="img-tech">
+                            </div>
+                            <div class="blog-one__single-content">
+                                <ul class="meta-box"></ul>
+                                <h2>
+                                    Digital Marketing </h2>
+                                <div class="btn-box">
+
+                                    <!-- Enroll Button -->
+                                    <!--<a data-toggle="modal" data-target="#CourseModal1" class="btn">-->
+                                    <!--    Enroll Now-->
+                                    <!--</a>-->
+                                    <a href="javascript:void(0)" class="btn enroll-btn" data-toggle="modal"
+                                        data-target="#CourseModal1" data-id="13" data-heading="Digital Marketing">
+                                        Enroll Now
+                                    </a>
+
+                                    <!-- Details Button -->
+                                    <button class="btn details-btn" data-toggle="modal" data-target="#detailsModal13">
+                                        Details
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Dynamic Modal -->
+
+                    <!-- Dynamic Modal -->
+                    <div class="modal fade" id="detailsModal13" tabindex="-1" role="dialog">
+
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+
+                            <div class="modal-content" style="border:10px solid #22c3a0;">
+                                <div class="modal-body">
+
+                                    <!-- Heading -->
+                                    <div style="
+                                                border:4px solid #22c3a0;
+                                                background-color:#22c3a0;
+                                                padding:10px;
+                                                border-radius:5px;
+                                                margin-bottom:20px;">
+
+                                        <h3 style="
+                                                    margin:0;
+                                                    color:white;
+                                                    text-align:center;">
+
+                                            Digital Marketing
+                                        </h3>
+                                    </div>
+                                    <div style="
+                            padding:10px;
+                            border-radius:5px;
+                            margin-bottom:20px;">
+
+
+                                        <h4 style="
+                            color:red;
+                            text-align:center;">
+                                            No Details Found
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--<div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay=".3s">-->
+                    <div id="graphic-designing" class="col-xl-4 col-lg-4 wow fadeInUp animated" data-wow-delay=".3s"
+                        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+
+                        <div class="blog-one__single">
+
+                            <div class="blog-one__single-img">
+
+                                <img src="img/graphic design.png" alt="img-tech">
+
+                            </div>
+
+                            <div class="blog-one__single-content">
+
+                                <ul class="meta-box"></ul>
+
+                                <h2>
+                                    Graphic Designing </h2>
+
+                                <div class="btn-box">
+                                    <a href="javascript:void(0)" class="btn enroll-btn" data-toggle="modal"
+                                        data-target="#CourseModal1" data-id="14" data-heading="Graphic Designing">
+                                        Enroll Now
+                                    </a>
+
+                                    <!-- Details Button -->
+                                    <button class="btn details-btn" data-toggle="modal" data-target="#detailsModal14">
+                                        Details
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Dynamic Modal -->
+
+                    <!-- Dynamic Modal -->
+                    <div class="modal fade" id="detailsModal14" tabindex="-1" role="dialog">
+
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+
+                            <div class="modal-content" style="border:10px solid #22c3a0;">
+
+                                <div class="modal-body">
+
+                                    <!-- Heading -->
+                                    <div style="
+                                                border:4px solid #22c3a0;
+                                                background-color:#22c3a0;
+                                                padding:10px;
+                                                border-radius:5px;
+                                                margin-bottom:20px;">
+
+                                        <h3 style="
+                                                    margin:0;
+                                                    color:white;
+                                                    text-align:center;">
+
+                                            Graphic Designing
+
+                                        </h3>
+
+                                    </div>
+
+                                    <div style="
+                            padding:10px;
+                            border-radius:5px;
+                            margin-bottom:20px;">
+
+
+                                        <h4 style="
+                            color:red;
+                            text-align:center;">
+
+                                            No Details Found
+
+                                        </h4>
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!--<div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay=".3s">-->
+                    <div id="mern-stack" class="col-xl-4 col-lg-4 wow fadeInUp animated" data-wow-delay=".3s"
+                        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+
+                        <div class="blog-one__single">
+
+                            <div class="blog-one__single-img">
+
+                                <img src="img/mern.png" alt="img-tech">
+
+                            </div>
+
+                            <div class="blog-one__single-content">
+
+                                <ul class="meta-box"></ul>
+
+                                <h2>
+                                    MERN Stack </h2>
+
+                                <div class="btn-box">
+
+                                    <!-- Enroll Button -->
+                                    <!--<a data-toggle="modal" data-target="#CourseModal1" class="btn">-->
+                                    <!--    Enroll Now-->
+                                    <!--</a>-->
+                                    <a href="javascript:void(0)" class="btn enroll-btn" data-toggle="modal"
+                                        data-target="#CourseModal1" data-id="15" data-heading="MERN Stack">
+                                        Enroll Now
+                                    </a>
+
+                                    <!-- Details Button -->
+                                    <button class="btn details-btn" data-toggle="modal" data-target="#detailsModal15">
+                                        Details
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Dynamic Modal -->
+
+                    <!-- Dynamic Modal -->
+                    <div class="modal fade" id="detailsModal15" tabindex="-1" role="dialog">
+
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+
+                            <div class="modal-content" style="border:10px solid #22c3a0;">
+
+                                <!--<div class="modal-header border-bottom-0">-->
+
+                                <!--    <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+
+                                <!--        <span aria-hidden="true">&times;</span>-->
+
+                                <!--    </button>-->
+
+                                <!--</div>-->
+
+                                <div class="modal-body">
+
+                                    <!-- Heading -->
+                                    <div style="
+                                                border:4px solid #22c3a0;
+                                                background-color:#22c3a0;
+                                                padding:10px;
+                                                border-radius:5px;
+                                                margin-bottom:20px;">
+
+                                        <h3 style="
+                                                    margin:0;
+                                                    color:white;
+                                                    text-align:center;">
+
+                                            MERN Stack
+
+                                        </h3>
+
+                                    </div>
+
+                                    <div style="
+                            padding:10px;
+                            border-radius:5px;
+                            margin-bottom:20px;">
+
+
+                                        <!-- Web Design -->
+
+                                        <h4 style="
+    color:#22c3a0;
+    margin-bottom:5px;
+    font-size:30px;">
+
+                                            Web Design
+
+                                        </h4>
+
+                                        <ul style="
+    list-style-type:square;
+    padding-left:50px;">
+
+
+                                            <li style="font-size:22px;">
+
+                                                HTML &amp; Semantic Markup
+                                            </li>
+
+
+                                            <li style="font-size:22px;">
+
+                                                CSS &amp; Responsive Styling
+                                            </li>
+
+
+                                            <li style="font-size:22px;">
+
+                                                Bootstrap Framework
+                                            </li>
+
+
+                                            <li style="font-size:22px;">
+
+                                                JavaScript &amp; Interactive UI
+                                            </li>
+
+
+                                            <li style="font-size:22px;">
+
+                                                React JS Framework
+                                            </li>
+
+
+                                        </ul>
+
+
+
+                                        <!-- Development -->
+
+                                        <h4 style="
+    color:#22c3a0;
+    margin-bottom:5px;
+    font-size:30px;">
+
+                                            Development
+
+                                        </h4>
+
+                                        <ul style="
+    list-style-type:square;
+    padding-left:50px;">
+
+
+                                            <li style="font-size:22px;">
+
+                                                Node.js &amp; Backend Development
+                                            </li>
+
+
+                                            <li style="font-size:22px;">
+
+                                                Express JS Framework
+                                            </li>
+
+
+                                        </ul>
+
+
+
+                                        <!-- Database -->
+
+                                        <h4 style="
+    color:#22c3a0;
+    margin-bottom:5px;
+    font-size:30px;">
+
+                                            Database
+
+                                        </h4>
+
+                                        <ul style="
+    list-style-type:square;
+    padding-left:50px;">
+
+
+                                            <li style="font-size:22px;">
+
+                                                Mongo DB
+                                            </li>
+
+
+                                        </ul>
+
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!--<div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay=".3s">-->
+                    <div id="mean-stack" class="col-xl-4 col-lg-4 wow fadeInUp animated" data-wow-delay=".3s"
+                        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                        <div class="blog-one__single">
+                            <div class="blog-one__single-img">
+                                <img src="img/meanstack.png" alt="img-tech">
+                            </div>
+                            <div class="blog-one__single-content">
+                                <ul class="meta-box"></ul>
+                                <h2>
+                                    MEAN Stack </h2>
+                                <div class="btn-box">
+                                    <!-- Enroll Button -->
+                                    <!--<a data-toggle="modal" data-target="#CourseModal1" class="btn">-->
+                                    <!--    Enroll Now-->
+                                    <!--</a>-->
+                                    <a href="javascript:void(0)" class="btn enroll-btn" data-toggle="modal"
+                                        data-target="#CourseModal1" data-id="16" data-heading="MEAN Stack">
+                                        Enroll Now
+                                    </a>
+                                    <!-- Details Button -->
+                                    <button class="btn details-btn" data-toggle="modal" data-target="#detailsModal16">
+                                        Details
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Dynamic Modal -->
+
+                    <!-- Dynamic Modal -->
+                    <div class="modal fade" id="detailsModal16" tabindex="-1" role="dialog">
+
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+
+                            <div class="modal-content" style="border:10px solid #22c3a0;">
+
+                                <!--<div class="modal-header border-bottom-0">-->
+
+                                <!--    <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+
+                                <!--        <span aria-hidden="true">&times;</span>-->
+
+                                <!--    </button>-->
+
+                                <!--</div>-->
+
+                                <div class="modal-body">
+
+                                    <!-- Heading -->
+                                    <div style="
+                                                border:4px solid #22c3a0;
+                                                background-color:#22c3a0;
+                                                padding:10px;
+                                                border-radius:5px;
+                                                margin-bottom:20px;">
+
+                                        <h3 style="
+                                                    margin:0;
+                                                    color:white;
+                                                    text-align:center;">
+
+                                            MEAN Stack
+
+                                        </h3>
+
+                                    </div>
+
+                                    <div style="
+                            padding:10px;
+                            border-radius:5px;
+                            margin-bottom:20px;">
+
+                                        <!-- Web Design -->
+                                        <h4 style="
+    color:#22c3a0;
+    margin-bottom:5px;
+    font-size:30px;">
+
+                                            Web Design
+
+                                        </h4>
+
+                                        <ul style="
+    list-style-type:square;
+    padding-left:50px;">
+
+
+                                            <li style="font-size:22px;">
+
+                                                HTML &amp; Semantic Markup
+                                            </li>
+
+
+                                            <li style="font-size:22px;">
+
+                                                CSS &amp; Responsive Styling
+                                            </li>
+
+
+                                            <li style="font-size:22px;">
+
+                                                Bootstrap Framework
+                                            </li>
+
+
+                                            <li style="font-size:22px;">
+
+                                                JavaScript &amp; Interactive UI
+                                            </li>
+
+
+                                            <li style="font-size:22px;">
+
+                                                Angular Framework
+                                            </li>
+
+
+                                        </ul>
+
+
+
+                                        <!-- Development -->
+
+                                        <h4 style="color:#22c3a0; margin-bottom:5px; font-size:30px;">
+                                            Development
+                                        </h4>
+
+                                        <ul style="list-style-type:square; padding-left:50px;">
+
+                                            <li style="font-size:22px;">
+                                                Node.js &amp; Backend Development
+                                            </li>
+
+                                            <li style="font-size:22px;">
+                                                Express JS Framework
+                                            </li>
+                                        </ul>
+
+                                        <!-- Database -->
+                                        <h4 style="color:#22c3a0; margin-bottom:5px; font-size:30px;">
+                                            Database
+                                        </h4>
+                                        <ul style="list-style-type:square; padding-left:50px;">
+                                            <li style="font-size:22px;">
+                                                Mongo DB
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--<div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay=".3s">-->
+                    <div id="hr-internship" class="col-xl-4 col-lg-4 wow fadeInUp animated" data-wow-delay=".3s"
+                        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+
+                        <div class="blog-one__single">
+
+                            <div class="blog-one__single-img">
+
+                                <img src="img/hr intern.png" alt="img-tech">
+
+                            </div>
+
+                            <div class="blog-one__single-content">
+
+                                <ul class="meta-box"></ul>
+
+                                <h2>
+                                    HR Internship </h2>
+
+                                <div class="btn-box">
+
+                                    <!-- Enroll Button -->
+                                    <!--<a data-toggle="modal" data-target="#CourseModal1" class="btn">-->
+                                    <!--    Enroll Now-->
+                                    <!--</a>-->
+                                    <a href="javascript:void(0)" class="btn enroll-btn" data-toggle="modal"
+                                        data-target="#CourseModal1" data-id="17" data-heading="HR Internship">
+                                        Enroll Now
+                                    </a>
+
+                                    <!-- Details Button -->
+                                    <button class="btn details-btn" data-toggle="modal" data-target="#detailsModal17">
+                                        Details
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Dynamic Modal -->
+
+                    <!-- Dynamic Modal -->
+                    <div class="modal fade" id="detailsModal17" tabindex="-1" role="dialog">
+
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+
+                            <div class="modal-content" style="border:10px solid #22c3a0;">
+
+                                <div class="modal-body">
+
+                                    <!-- Heading -->
+                                    <div style="
+                                                border:4px solid #22c3a0;
+                                                background-color:#22c3a0;
+                                                padding:10px;
+                                                border-radius:5px;
+                                                margin-bottom:20px;">
+
+                                        <h3 style="
+                                                    margin:0;
+                                                    color:white;
+                                                    text-align:center;">
+
+                                            HR Internship
+
+                                        </h3>
+
+                                    </div>
+
+                                    <div style="padding:10px; border-radius:5px; margin-bottom:20px;">
+                                        <h4 style="color:red;text-align:center;">
+                                            No Details Found
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay=".3s">-->
+                    <div id="android-devlopment" class="col-xl-4 col-lg-4 wow fadeInUp animated" data-wow-delay=".3s"
+                        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                        <div class="blog-one__single">
+                            <div class="blog-one__single-img">
+                                <img src="img/Android.jpeg" alt="img-tech">
+                            </div>
+                            <div class="blog-one__single-content">
+                                <ul class="meta-box"></ul>
+                                <h2>
+                                    Android Development </h2>
+                                <div class="btn-box">
+                                    <!-- Enroll Button -->
+                                    <!--<a data-toggle="modal" data-target="#CourseModal1" class="btn">-->
+                                    <!--    Enroll Now-->
+                                    <!--</a>-->
+                                    <a href="javascript:void(0)" class="btn enroll-btn" data-toggle="modal"
+                                        data-target="#CourseModal1" data-id="19" data-heading="Android Development">
+                                        Enroll Now
+                                    </a>
+
+                                    <!-- Details Button -->
+                                    <button class="btn details-btn" data-toggle="modal" data-target="#detailsModal19">
+                                        Details
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dynamic Modal -->
+                    <div class="modal fade" id="detailsModal19" tabindex="-1" role="dialog">
+
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+
+                            <div class="modal-content" style="border:10px solid #22c3a0;">
+
+                                <div class="modal-body">
+                                    <!-- Heading -->
+                                    <div style="
+                                                border:4px solid #22c3a0;
+                                                background-color:#22c3a0;
+                                                padding:10px;
+                                                border-radius:5px;
+                                                margin-bottom:20px;">
+
+                                        <h3 style="margin:0;color:white; text-align:center;">
+                                            Android Devlopment
+                                        </h3>
+                                    </div>
+                                    <div style="padding:10px; border-radius:5px; margin-bottom:20px;">
+                                        <h4 style="color:red; text-align:center;">
+                                            No Details Found
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--<div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay=".3s">-->
+                    <div id="data-analytics-" class="col-xl-4 col-lg-4 wow fadeInUp animated" data-wow-delay=".3s"
+                        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                        <div class="blog-one__single">
+                            <div class="blog-one__single-img">
+                                <img src="img/data analytics.png" alt="img-tech">
+                            </div>
+                            <div class="blog-one__single-content">
+                                <ul class="meta-box"></ul>
+                                <h2>Data Analytics </h2>
+                                <div class="btn-box">
+                                    <a href="javascript:void(0)" class="btn enroll-btn" data-toggle="modal"
+                                        data-target="#CourseModal1" data-id="23" data-heading="Data Analytics">
+                                        Enroll Now
+                                    </a>
+                                    <!-- Details Button -->
+                                    <button class="btn details-btn" data-toggle="modal" data-target="#detailsModal23">
+                                        Details
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dynamic Modal -->
+                    <div class="modal fade" id="detailsModal23" tabindex="-1" role="dialog">
+
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                            <div class="modal-content" style="border:10px solid #22c3a0;">
+                                <div class="modal-body">
+                                    <!-- Heading -->
+                                    <div style="
+                                                border:4px solid #22c3a0;
+                                                background-color:#22c3a0;
+                                                padding:10px;
+                                                border-radius:5px;
+                                                margin-bottom:20px;">
+                                        <h3 style="
+                                                    margin:0;
+                                                    color:white;
+                                                    text-align:center;">
+                                            Data Analytics
+                                        </h3>
+                                    </div>
+                                    <div style="
+                            padding:10px;
+                            border-radius:5px;
+                            margin-bottom:20px;">
+                                        <h4 style="
+                            color:red;
+                            text-align:center;">
+                                            No Details Found
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--<div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay=".3s">-->
+                    <div id="java-development" class="col-xl-4 col-lg-4 wow fadeInUp animated" data-wow-delay=".3s"
+                        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                        <div class="blog-one__single">
+                            <div class="blog-one__single-img">
+                                <img src="img/java.png" alt="img-tech">
+                            </div>
+                            <div class="blog-one__single-content">
+                                <ul class="meta-box"></ul>
+                                <h2>
+                                    Java Development </h2>
+                                <div class="btn-box">
+                                    <!-- Enroll Button -->
+                                    <!--<a data-toggle="modal" data-target="#CourseModal1" class="btn">-->
+                                    <!--    Enroll Now-->
+                                    <!--</a>-->
+                                    <a href="javascript:void(0)" class="btn enroll-btn" data-toggle="modal"
+                                        data-target="#CourseModal1" data-id="24" data-heading="Java Development">
+                                        Enroll Now
+                                    </a>
+                                    <!-- Details Button -->
+                                    <button class="btn details-btn" data-toggle="modal" data-target="#detailsModal24">
+                                        Details
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dynamic Modal -->
+                    <div class="modal fade" id="detailsModal24" tabindex="-1" role="dialog">
+
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+
+                            <div class="modal-content" style="border:10px solid #22c3a0;">
+                                <div class="modal-body">
+
+                                    <!-- Heading -->
+                                    <div style="
+                                                border:4px solid #22c3a0;
+                                                background-color:#22c3a0;
+                                                padding:10px;
+                                                border-radius:5px;
+                                                margin-bottom:20px;">
+
+                                        <h3 style="
+                                                    margin:0;
+                                                    color:white;
+                                                    text-align:center;">
+
+                                            Java Development
+
+                                        </h3>
+
+                                    </div>
+
+                                    <div style="
+                            padding:10px;
+                            border-radius:5px;
+                            margin-bottom:20px;">
+
+
+                                        <!-- Web Design -->
+
+                                        <h4 style="color:#22c3a0; margin-bottom:5px; font-size:30px;">
+
+                                            Web Design
+
+                                        </h4>
+
+                                        <ul style="list-style-type:square;padding-left:50px;">
+                                            <li style="font-size:22px;">
+
+                                                HTML &amp; Semantic Markup
+                                            </li>
+
+
+                                            <li style="font-size:22px;">
+                                                CSS &amp; Responsive Styling
+                                            </li>
+
+
+                                            <li style="font-size:22px;">
+
+                                                Bootstrap Framework
+                                            </li>
+
+
+                                            <li style="font-size:22px;">
+
+                                                JavaScript &amp; Interactive UI
+                                            </li>
+                                        </ul>
+
+                                        <!-- Development -->
+
+                                        <h4 style="color:#22c3a0; margin-bottom:5px; font-size:30px;">
+                                            Development
+                                        </h4>
+                                        <ul style="list-style-type:square; padding-left:50px;">
+
+                                            <li style="font-size:22px;">
+
+                                                Core Java Programming
+                                            </li>
+
+
+                                            <li style="font-size:22px;">
+
+                                                JSP (Java Server Pages)
+                                            </li>
+
+
+                                            <li style="font-size:22px;">
+
+                                                Servlets &amp; Backend
+                                            </li>
+
+
+                                            <li style="font-size:22px;">
+
+                                                Spring Boot Framework
+                                            </li>
+                                        </ul>
+                                        <!-- Database -->
+                                        <h4 style="
+    color:#22c3a0;
+    margin-bottom:5px;
+    font-size:30px;">
+                                            Database
+
+                                        </h4>
+                                        <ul style="
+    list-style-type:square;
+    padding-left:50px;">
+
+                                            <li style="font-size:22px;">
+
+                                                MySQL Database
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--<div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay=".3s">-->
+                    <div id="python-development" class="col-xl-4 col-lg-4 wow fadeInUp animated" data-wow-delay=".3s"
+                        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+
+                        <div class="blog-one__single">
+
+                            <div class="blog-one__single-img">
+
+                                <img src="img/python.png" alt="img-tech">
+
+                            </div>
+
+                            <div class="blog-one__single-content">
+
+                                <ul class="meta-box"></ul>
+
+                                <h2>
+                                    Python Development </h2>
+
+                                <div class="btn-box">
+
+                                    <!-- Enroll Button -->
+                                    <!--<a data-toggle="modal" data-target="#CourseModal1" class="btn">-->
+                                    <!--    Enroll Now-->
+                                    <!--</a>-->
+                                    <a href="javascript:void(0)" class="btn enroll-btn" data-toggle="modal"
+                                        data-target="#CourseModal1" data-id="25" data-heading="Python Development">
+                                        Enroll Now
+                                    </a>
+
+                                    <!-- Details Button -->
+                                    <button class="btn details-btn" data-toggle="modal" data-target="#detailsModal25">
+                                        Details
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Dynamic Modal -->
+
+                    <!-- Dynamic Modal -->
+                    <div class="modal fade" id="detailsModal25" tabindex="-1" role="dialog">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                            <div class="modal-content" style="border:10px solid #22c3a0;">
+                                <div class="modal-body">
+                                    <!-- Heading -->
+                                    <div style="
+                                                border:4px solid #22c3a0;
+                                                background-color:#22c3a0;
+                                                padding:10px;
+                                                border-radius:5px;
+                                                margin-bottom:20px;">
+
+                                        <h3 style="
+                                                    margin:0;
+                                                    color:white;
+                                                    text-align:center;">
+
+                                            Python Development
+                                        </h3>
+                                    </div>
+                                    <div style="padding:10px; border-radius:5px; margin-bottom:20px;">
+
+                                        <!-- Web Design -->
+                                        <h4 style="color:#22c3a0; margin-bottom:5px; font-size:30px;">
+                                            Web Design
+                                        </h4>
+                                        <ul style="list-style-type:square; padding-left:50px;">
+                                            <li style="font-size:22px;">
+                                                HTML &amp; Semantic Markup
+                                            </li>
+                                            <li style="font-size:22px;">
+                                                CSS &amp; Responsive Styling
+                                            </li>
+                                            <li style="font-size:22px;">
+                                                Bootstrap Framework
+                                            </li>
+                                            <li style="font-size:22px;">
+                                                JavaScript &amp; Interactive UI
+                                            </li>
+                                            <li style="font-size:22px;">
+
+                                                React JS Framework
+                                            </li>
+                                        </ul>
+
+                                        <!-- Development -->
+                                        <h4 style="color:#22c3a0; margin-bottom:5px; font-size:30px;">
+                                            Development
+                                        </h4>
+
+                                        <ul style="list-style-type:square; padding-left:50px;">
+                                            <li style="font-size:22px;">
+                                                Django Framework
+                                            </li>
+
+                                            <li style="font-size:22px;">
+                                                Flask Framework
+                                            </li>
+                                        </ul>
+
+                                        <!-- Database -->
+                                        <h4 style="color:#22c3a0; margin-bottom:5px; font-size:30px;">
+                                            Database
+                                        </h4>
+                                        <ul style="
+    list-style-type:square;
+    padding-left:50px;">
+                                            <li style="font-size:22px;">
+
+                                                Mongo DB
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer-wrap site-footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-6">
+                            <div class="footer-widget site-footer__brand">
+                                <a href="index.html" class="footer-logo" aria-label="Cyberathon Nexus home">
+                                    <img src="img/secondlogo.jpg" alt="Cyberathon Nexus">
+                                </a>
+                                <p>Empowering careers through industry-ready training, internships, and technology
+                                    solutions.</p>
+                                <span class="site-footer__tagline">Learn. Build. Grow.</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-widget">
+                                <h2 class="footer-widget-title">Explore</h2>
+                                <ul class="footer-menu">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="Aboutpage.html">About Us</a></li>
+                                    <li><a href="trainingandnternship.html">Training &amp; Internship</a></li>
+                                    <li><a href="blogs.html">Blogs</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="footer-widget site-footer__contact">
+                                <h2 class="footer-widget-title">Get in touch</h2>
+                                <ul class="footer-contact-address">
+                                    <li>
+                                        <i class="ri-map-pin-line" aria-hidden="true"></i>
+                                        <span>1st Floor, Plot No. 4, Shivdatta Apartment, Mankapur Ring Rd, Nagpur,
+                                            Maharashtra 440022</span>
+                                    </li>
+                                    <!-- <li><i class="ri-phone-line" aria-hidden="true"></i><a href="tel: +917498641386"> +91 7498641386</a></li> -->
+                                    <li><i class="ri-phone-line" aria-hidden="true"></i><a href="tel: +918308626961">
+                                            +91 8308626961</a></li>
+                                    <li><i class="ri-mail-line" aria-hidden="true"></i><a
+                                            href="mailto:info@cybernexussolution.in">info@cybernexussolution.in</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="copyright-text">
+                        <p>&copy; 2026 Cyberathon Nexus. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Footer  end -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

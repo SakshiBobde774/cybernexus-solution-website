@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!--====== Title ======-->
+    <title>CyberNexus</title>
+    
+    <!--====== Google Fonts ======-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="img/favicon.jpg" type="image/jpg">
+    
+    <!--====== Bootstrap css ======-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--====== Jquery UI css ======-->
+    <link href="css/jquery-ui.min.css" rel="stylesheet">
+    <!--====== icon css ======-->
+    <link href="css/line-awesome.min.css" rel="stylesheet">
+    <link href="css/remixicon.css" rel="stylesheet">
+    <!--====== Animate  css ======-->
+    <link href="css/animate.min.css" rel="stylesheet">
+    <!--====== Swiper css ======-->
+    <link href="css/swiper.min.css" rel="stylesheet">
+    <!--====== Style css ======-->
+   <link href="scss/style.css" rel="stylesheet">
+
+   <!----------------icons------------------------------>
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+
+   <link rel="stylesheet" href="https://icons8.com">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/line-awesome@1.3.0/dist/line-awesome/css/line-awesome.min.css">
+
+</head>
+<body>
+    <!-- Theme Switcher Start -->
+    <div class="switch-theme-mode">
+        <label id="switch" class="switch">
+                <input type="checkbox" onchange="toggleTheme()" id="slider">
+                <span class="slider round"></span>
+        </label>
+    </div>
+    <!-- Theme Switcher End -->
+     <!-- page wrapper Start -->
+    <div class="page-wrapper">
+
+        <header class="header-wrap style1">
+           <div class="header-top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7"> <!-- Content area thoda badhaya taaki space proper mile -->
+                            <div class="header-top-left">
+                                <div class="close-header-top xl-none">
+                                    <button type="button"><i class="las la-times"></i></button>
+                                </div>
+                                <!-- Nagpur Location Block -->
+                                <div class="header-contact me-3">
+                                    <p class="mb-0"><i class="ri-map-pin-fill"></i> Nagpur, Maharashtra</p>
+                                </div>
+                                <!-- Email Block: Inline CSS se iski right border/line ko remove kiya gaya hai -->
+                                <div class="header-contact me-3"
+                                    style="border: none !important; padding-right: 0 !important;">
+                                    <a href="mailto:info@cybernexussolution.in">
+                                        <i class="ri-mail-send-line"></i>info@cybernexussolution.in
+                                    </a>
+                                </div>
+                                <!-- Phone Number Block: Isse pehle separator bar (`|`) HTML se manual lagaya hai -->
+                                <div class="header-contact d-flex align-items-center">
+                                    <span class="text-white-50 me-3">|</span>
+                                    <a href="tel:+918308626961">
+                                        <i class="ri-phone-fill"></i> +91 8308626961
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5"> <!-- Right side block adjustment -->
+                            <div class="header-top-right">
+                                <div class="lang_selctor style1">
+                                    <i class="ri-global-line"> </i>
+                                    <select>
+                                        <option value="1">English</option>
+                                    </select>
+                                </div>
+                                <div class="header-social">
+                                    <span>Follow us :</span>
+                                    <ul class="social-profile style3">
+                                        <li><a target="_blank" href="#"><i class="ri-facebook-fill"></i> </a></li>
+                                        <li><a target="_blank" href="https://linkedin.com"><i
+                                                    class="ri-linkedin-fill"></i> </a></li>
+                                        <li><a target="_blank" href="https://twitter.com"><i
+                                                    class="ri-twitter-fill"></i> </a></li>
+                                        <li><a target="_blank" href="https://instagram.com"><i
+                                                    class="ri-instagram-line"></i> </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 xl-none">
+                            <div class="header-search">
+                                <form action="#">
+                                    <div class="form-group">
+                                        <input type="search" placeholder="Search Here ..." aria-label="Search this page"
+                                            required>
+                                        <button type="submit"><i class="ri-search-eye-line"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-2 col-md-4 col-6 order-lg-1 order-md-1 order-1">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img class="logo-light" src="./img/secondlogo.jpg" alt="Image">
+                                    <!-- <img class="logo-dark" src="img/logo-white.png" alt="Image"> -->
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-3 col-6 order-lg-2 order-md-3 order-3">
+                            <div class="main-menu-wrap style1">
+                                <div class="menu-close xl-none">
+                                    <a href="javascript:void(0)"><i class="las la-times"></i></a>
+                                </div>
+                                <div id="menu" class="text-left">
+                                    <ul class="main-menu ">
+                                        <li>
+                                            <a href="index.html">HOME</a>
+                                        </li>
+                                        <li>
+                                            <a href="Aboutpage.html">ABOUT</a>
+                                        </li>
+                                        <li>
+                                            <a href="trainingandnternship.html">Training & Internships</a>
+                                        </li>
+                                        <li><a href="blogs.html"  class="active">BLOGS</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mobile-bar-wrap">
+                                <div class="sidebar-menu xl-none">
+                                    <i class="ri-equalizer-line"></i>
+                                </div>
+                                <div class="mobile-top-bar xl-none">
+                                    <i class="ri-settings-3-line"></i>
+                                </div>
+                                <div class="mobile-menu xl-none">
+                                    <a href='javascript:void(0)'><i class="ri-menu-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-5  order-lg-3 order-md-2">
+                            <div class="header-menu-wrap">
+                                <div class="header-search md-none">
+                                    <form action="#">
+                                        <div class="form-group">
+                                            <input type="search" placeholder="Search Here ..." aria-label="Search this page" required>
+                                            <button type="submit"> <i class="ri-search-eye-line"></i> </button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="sidebar-menu md-none">
+                                    <i class="ri-equalizer-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+       <div class="body_overlay"></div>
+       <div class="contact-popup">
+            <div class="contact-popup-title">
+                <button type="button" class="close-popup"> <i class="ri-close-fill"></i> </button>
+            </div>
+            <div class="contact-popup-wrap">
+                <div class="comp-info">
+                    <div class="comp-logo">
+                        <a href="index.html">
+                            <img class="logo-light" src="img/secondlogo.jpg" alt="Image">
+                            <img class="logo-dark" src="img/logo-white.png" alt="Image">
+                        </a>
+                    </div>
+                    <p class="comp-desc">Empowering students and professionals with industry-ready skills, practical
+                        training, and real-world internship experiences to launch successful tech careers.</p>
+                    <ul class="footer-contact-address">
+                        <li><a href="tel:7498641386"> <i class="ri-phone-line"></i>+91 8308626961</a></li>
+                        <li> <i class="ri-mail-send-fill"></i> <a href="mailto:info@cybernexussolution.in">info@cybernexussolution.in</span></a></li>
+                        <!-- <li> <i class="ri-earth-fill"></i> <a href="https://www.ecour.com">www.ecour.com</a></li> -->
+                        <li>
+                            <i class="ri-map-pin-fill"></i> 1st Floor, Plot No. 4, Shivdatta Apartment, Mankapur Ring
+                            Rd, Nagpur, Maharashtra 440022
+                        </li>
+                    </ul>
+                </div>
+                <div class="comp-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.961127608986!2d79.04113527479835!3d21.11411588484238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bf6ac8fe2581%3A0x64053ccc6c891b29!2sCYBERATHON!5e0!3m2!1sen!2sin!4v1699445004863!5m2!1sen!2sin"></iframe>
+                </div>
+                <!-- <div class="share-on text-center">
+                    <ul class="social-profile style2">
+                        <li><a target="_blank" href="https://facebook.com"><i class="ri-facebook-fill"></i> </a></li>
+                        <li><a target="_blank" href="https://twitter.com"> <i class="ri-twitter-fill"></i> </a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/company/cybernexus-solution/"> <i class="ri-linkedin-fill"></i> </a></li>
+                        <li><a target="_blank" href="https://instagram.com"> <i class="ri-instagram-line"></i> </a></li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+
+        <!-- Blog Section Start -->
+        <section class="blog-wrap blogs-index pt-100 pb-70" style="margin-top: 60px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title style1 text-center mb-40">
+                            <span>Insights &amp; Guidance</span>
+                            <h2>Latest News & Blogs</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-md-center">
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="blog-card">
+                            <a href="blog-details-right-sidebar.html" class="blog-img">
+                                <img src="img/blog-career-guide.jpg" alt="A developer working on a laptop" loading="lazy" decoding="async">
+                            </a>
+                            <div class="blog-info">
+                                <div class="blog-date">
+                                    <h6><span>18</span>Oct</h6>
+                                </div>
+                                <span class="blog-category">Career Guide</span>
+                                <h3><a href="blog-details-right-sidebar.html">How to Start a Web Development Career: A Practical Roadmap</a></h3>
+                                <p>Learn the core skills employers look for, build a portfolio with real projects, and prepare for your first developer role.</p>
+                                <div class="blog-author-wrap">
+                                    <div class="blog-author">
+                                        <span class="blog-author-img blog-author-initials" aria-hidden="true">RS</span>
+                                        <div class="blog-author-name">
+                                            <p>By <a href="blog-details-left-sidebar.html">Riya Sharma</a></p>
+                                        </div>
+                                    </div>
+                                    <a href="blog-details-right-sidebar.html" class="read-more"><i class="las la-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="blog-card">
+                            <a href="blog-details-right-sidebar.html" class="blog-img">
+                                <img src="img/blog-internship-team.jpg" alt="Colleagues collaborating around a laptop" loading="lazy" decoding="async">
+                            </a>
+                            <div class="blog-info">
+                                <div class="blog-date">
+                                    <h6><span>12</span>Oct</h6>
+                                </div>
+                                <span class="blog-category">Internship</span>
+                                <h3><a href="blog-details-right-sidebar.html">From Internship to Industry: Building Skills That Matter</a></h3>
+                                <p>Discover how hands-on assignments, team collaboration, and mentor feedback can help you feel ready for the workplace.</p>
+                                <div class="blog-author-wrap">
+                                    <div class="blog-author">
+                                        <span class="blog-author-img blog-author-initials" aria-hidden="true">AD</span>
+                                        <div class="blog-author-name">
+                                            <p>By <a href="blog-details-left-sidebar.html">Aditya Deshmukh</a></p>
+                                        </div>
+                                    </div>
+                                    <a href="blog-details-right-sidebar.html" class="read-more"><i class="las la-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="blog-card">
+                            <a href="blog-details-right-sidebar.html" class="blog-img">
+                                <img src="img/blog-uiux-design.jpg" alt="Students learning and discussing a design project" loading="lazy" decoding="async">
+                            </a>
+                            <div class="blog-info">
+                                <div class="blog-date">
+                                    <h6><span>04</span>Oct</h6>
+                                </div>
+                                <span class="blog-category">UI/UX Design</span>
+                                <h3><a href="blog-details-right-sidebar.html">UI/UX Design for Beginners: From Research to First Prototype</a></h3>
+                                <p>Explore user research, wireframes, and prototyping, then turn your first design idea into a clear, testable experience.</p>
+                                <div class="blog-author-wrap">
+                                    <div class="blog-author">
+                                        <span class="blog-author-img blog-author-initials" aria-hidden="true">SK</span>
+                                        <div class="blog-author-name">
+                                            <p>By <a href="blog-details-left-sidebar.html">Sneha Kulkarni</a></p>
+                                        </div>
+                                    </div>
+                                    <a href="blog-details-right-sidebar.html" class="read-more"><i class="las la-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="blog-image-credit">Cover photos from <a href="https://unsplash.com/license" target="_blank" rel="noopener noreferrer">Unsplash</a>, used under the Unsplash License.</p>
+            </div>
+        </section>
+        <!-- Blog Section end -->
+
+
+        <!-- Footer  start -->
+        <footer class="footer-wrap site-footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-6">
+                            <div class="footer-widget site-footer__brand">
+                                <a href="index.html" class="footer-logo" aria-label="Cyberathon Nexus home">
+                                    <img src="img/secondlogo.jpg" alt="Cyberathon Nexus">
+                                </a>
+                                <p>Empowering careers through industry-ready training, internships, and technology
+                                    solutions.</p>
+                                <span class="site-footer__tagline">Learn. Build. Grow.</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-widget">
+                                <h2 class="footer-widget-title">Explore</h2>
+                                <ul class="footer-menu">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="Aboutpage.html">About Us</a></li>
+                                    <li><a href="trainingandnternship.html">Training &amp; Internship</a></li>
+                                    <li><a href="blogs.html">Blogs</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="footer-widget site-footer__contact">
+                                <h2 class="footer-widget-title">Get in touch</h2>
+                                <ul class="footer-contact-address">
+                                    <li>
+                                        <i class="ri-map-pin-line" aria-hidden="true"></i>
+                                        <span>1st Floor, Plot No. 4, Shivdatta Apartment, Mankapur Ring Rd, Nagpur,
+                                            Maharashtra 440022</span>
+                                    </li>
+                                    <!-- <li><i class="ri-phone-line" aria-hidden="true"></i><a href="tel: +917498641386"> +91 7498641386</a></li> -->
+                                    <li><i class="ri-phone-line" aria-hidden="true"></i><a href="tel: +918308626961"> +91 8308626961</a></li>
+                                    <li><i class="ri-mail-line" aria-hidden="true"></i><a
+                                            href="mailto:info@cybernexussolution.in">info@cybernexussolution.in</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="copyright-text">
+                        <p>&copy; 2026 Cyberathon Nexus. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer  end -->
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

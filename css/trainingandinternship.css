@@ -1,0 +1,773 @@
+.training-banner-bg {
+    background-image: url(../img/trainingheader.webp);
+    background-position: center 42%;
+}
+
+@media only screen and (max-width: 767px) {
+    .training-banner-bg {
+        background-position: 58% center;
+    }
+
+    .about-three .shape4, .about-three .shape5, .about-three__img .shape2, .about-three__img .shape3, .blog-list-page__single-content h2 a br, .blog-list-page__single-content-bottom::before, .blog-three__single-content h3 a br, .contact-page__top .title h2 br, .contact-page__top-single .content p br, .counter-one--two__top-single .img-box::before, .counter-one--two__top-single .shape2, .counter-one--two__top-single .shape3, .counter-one--two__top-single.style2 .img-box::after, .counter-one--two__top-single.style2 .shape4, .counter-one--two__top-single.style2 .shape5, .error-page__inner p br, .logo-three .shape1, .logo-three::before, .main-header-one--three__bottom-btn, .main-header-one--three__top-right, .main-slider-one.style3 .outer-content, .main-slider-one.style3 .shape3, .main-slider-one.style3 .shape4, .main-slider-one.style3 .shape5, .page-header .shape1, .pricing-one .title-box h2 br, .product-view-style::before, .projects-details-img1 .content-box::before, .services-one--three .shape13, .services-one--three .shape14, .services-one--three .shape15, .services-one--three .shape16, .services-one--three .shape17, .services-one--three .shape18, .sidebar__contact-box-img .overlay-content h3 br, .support-one .shape4, .support-one--two .support-one__img .shape1, .support-one--two .support-one__img .shape5, .support-one--two .support-one__img .shape6, .support-one::before, .support-one__content::after, .work-process-one__single .shape3 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .training-banner-bg {
+        background-position: 61% center;
+    }
+}
+
+
+a {
+    color: #000000;
+    text-transform: inherit;
+    text-decoration: none;
+}
+.float-bob-x {
+    -webkit-animation-name: float-bob-x;
+    animation-name: float-bob-x;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+/* @media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+} */
+/* .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+} */
+/* .container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@media (min-width: 576px) {
+    .container, .container-sm {
+        max-width: 540px;
+    }
+} */
+/* .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 576px) {
+    .container, .container-sm {
+        max-width: 540px;
+    }
+} */
+/* .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    margin-right: auto;
+    margin-left: auto;
+} */
+
+.blog-one--blog {
+    position: relative;
+    display: block;
+    padding: 110px 0 47px;
+}
+
+/* @media (min-width: 1200px) {
+    .col-xl-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+} */
+/* .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+} */
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.blog-one__single{
+    position: relative;
+    display: block;
+    /* margin-bottom: 30px; */
+}
+
+.blog-one--blog .row > [class*="col-"] {
+    display: flex;
+    flex: 0 0 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin-bottom: 30px;
+}
+
+.blog-one--blog .blog-one__single {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+
+.blog-one__single-img {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    z-index: 1;
+}
+
+.blog-one__single-img:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .7s ease-in-out .1s;
+    background: rgba(0, 0, 0, .5);
+    opacity: 0;
+    z-index: 1;
+    content: "";
+}
+
+.blog-one__single-img img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: .5s;
+    transform: scale(1.05);
+}
+
+.blog-one__single-content {
+    position: relative;
+    display: flex;
+    box-shadow: 0 0 35px 0 rgba(209, 210, 212, .35);
+    background: #fff;
+    padding: 30px 30px 35px;
+    z-index: 1;
+    flex: 1;
+    flex-direction: column;
+    min-height: 220px;
+}
+
+.blog-one__single-content .meta-box {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 22px;
+}
+
+.blog-one__single-content h2 {
+    font-size: 22px;
+    line-height: 34px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.blog-one__single-content .btn-box{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-top: auto;
+}
+
+.blog-one__single-content .btn-box a,
+.blog-one__single-content .btn-box .details-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 8px 35px 9px;
+    transition: .2s linear .1s;
+    min-height: 44px;
+    box-sizing: border-box;
+}
+
+.blog-one__single-content .btn-box .details-btn {
+    background: transparent;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.blog-one__single-content .btn-box a:hover,
+.blog-one__single-content .btn-box .details-btn:hover {
+    color: #fff;
+    background: #22c3a0;
+    border-color: #22c3a0;
+}
+
+.blog-one__single-content .btn-box a:focus-visible,
+.blog-one__single-content .btn-box .details-btn:focus-visible {
+    outline: 2px solid #22c3a0;
+    outline-offset: 3px;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+/*Internship Form */
+body.form-modal-open {
+            overflow: hidden;
+        }
+
+        /* Scope these styles to the application form so other site forms/modals keep their styling. */
+        #formModal {
+            display: none;
+            position: fixed;
+            z-index: 1100;
+            inset: 0;
+            align-items: flex-start;
+            justify-content: center;
+            overflow-y: auto;
+            padding: 24px 16px;
+            background: rgba(4, 24, 31, 0.68);
+            backdrop-filter: blur(5px);
+        }
+
+        #formModal.is-open {
+            display: flex;
+        }
+
+        #formModal .modal-content {
+            position: relative;
+            width: min(100%, 580px);
+            margin: auto;
+            overflow: hidden;
+            border: 0;
+            border-radius: 18px;
+            background: #fff;
+            box-shadow: 0 24px 64px rgba(0, 0, 0, 0.34);
+            animation: internshipFormIn 0.25s ease-out;
+        }
+
+        @keyframes internshipFormIn {
+            from { opacity: 0; transform: translateY(-18px) scale(0.98); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        #formModal .form-header {
+            padding: 25px 60px 22px 25px;
+            color: #fff;
+            background: linear-gradient(135deg, #087f72 0%, #1abc9c 100%);
+        }
+
+        #formModal .form-header h2 {
+            margin: 0;
+            color: inherit;
+            font-size: clamp(1.45rem, 3vw, 1.85rem);
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        #formModal .form-header p {
+            margin: 7px 0 0;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.94rem;
+        }
+
+        #formModal .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            display: grid;
+            width: 38px;
+            height: 38px;
+            padding: 0;
+            place-items: center;
+            border: 0;
+            border-radius: 50%;
+            color: #fff;
+            background: rgba(255, 255, 255, 0.16);
+            cursor: pointer;
+            font-size: 1.7rem;
+            line-height: 1;
+            transition: background 0.2s ease, transform 0.2s ease;
+        }
+
+        #formModal .close-btn:hover,
+        #formModal .close-btn:focus-visible {
+            background: rgba(255, 255, 255, 0.28);
+            transform: scale(1.06);
+        }
+
+        #formModal .close-btn:focus-visible,
+        #internshipForm :focus-visible,
+        .form-toast__close:focus-visible {
+            outline: 3px solid rgba(26, 188, 156, 0.42);
+            outline-offset: 2px;
+        }
+
+        #formModal .form-feedback {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+            margin: 20px 24px 0;
+            padding: 15px;
+            border: 1px solid transparent;
+            border-radius: 12px;
+        }
+
+        #formModal .form-feedback[hidden] {
+            display: none;
+        }
+
+        #formModal .form-feedback--success {
+            border-color: #a7e8cb;
+            background: #edfff5;
+            color: #136b43;
+        }
+
+        #formModal .form-feedback--error {
+            border-color: #f4bbbb;
+            background: #fff1f1;
+            color: #a12626;
+        }
+
+        #formModal .feedback-icon {
+            display: grid;
+            flex: 0 0 28px;
+            width: 28px;
+            height: 28px;
+            place-items: center;
+            border-radius: 50%;
+            color: #fff;
+            font-weight: 800;
+        }
+
+        #formModal .form-feedback--success .feedback-icon {
+            background: #159b63;
+        }
+
+        #formModal .form-feedback--error .feedback-icon {
+            background: #c0392b;
+        }
+
+        #formModal .feedback-icon::before {
+            color: #fff;
+        }
+
+        #formModal .form-feedback--success .feedback-icon::before {
+            content: "\2713";
+        }
+
+        #formModal .form-feedback--error .feedback-icon::before {
+            content: "!";
+        }
+
+        #formModal .feedback-copy {
+            flex: 1;
+        }
+
+        #formModal .feedback-copy strong,
+        #formModal .feedback-copy p {
+            display: block;
+            margin: 0;
+        }
+
+        #formModal .feedback-copy p {
+            margin-top: 3px;
+            font-size: 0.92rem;
+            line-height: 1.45;
+        }
+
+        #formModal .feedback-action {
+            margin-top: 10px;
+            padding: 7px 13px;
+            border: 0;
+            border-radius: 7px;
+            color: #fff;
+            background: #087f72;
+            cursor: pointer;
+            font: inherit;
+            font-weight: 700;
+        }
+
+        #internshipForm {
+            display: grid;
+            gap: 16px;
+            padding: 24px;
+        }
+
+        #internshipForm[hidden] {
+            display: none;
+        }
+
+        #internshipForm .form-row {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 14px;
+        }
+
+        #internshipForm .form-field {
+            min-width: 0;
+        }
+
+        #internshipForm label:not(.consent-label) {
+            display: block;
+            margin-bottom: 7px;
+            color: #263238;
+            font-size: 0.89rem;
+            font-weight: 700;
+        }
+
+        #internshipForm .required-mark {
+            color: #c0392b;
+        }
+
+        #internshipForm input[type="text"],
+        #internshipForm input[type="email"],
+        #internshipForm input[type="tel"],
+        #internshipForm select,
+        #internshipForm textarea {
+            width: 100%;
+            min-height: 47px;
+            padding: 11px 12px;
+            box-sizing: border-box;
+            border: 1px solid #cbd5d8;
+            border-radius: 9px;
+            color: #213238;
+            background: #fff;
+            font: inherit;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        #internshipForm textarea {
+            min-height: 104px;
+            resize: vertical;
+        }
+
+        #internshipForm input:focus,
+        #internshipForm select:focus,
+        #internshipForm textarea:focus {
+            border-color: #159b87;
+            box-shadow: 0 0 0 3px rgba(26, 188, 156, 0.16);
+            outline: 0;
+        }
+
+        #internshipForm .form-help {
+            display: block;
+            margin-top: 6px;
+            color: #64748b;
+            font-size: 0.78rem;
+            line-height: 1.35;
+        }
+
+        #internshipForm .form-honeypot {
+            display: none;
+        }
+
+        #internshipForm .file-upload {
+            display: flex;
+            align-items: center;
+            min-height: 47px;
+            overflow: hidden;
+            border: 1px solid #cbd5d8;
+            border-radius: 9px;
+            background: #fff;
+        }
+
+        #internshipForm #customFileBtn {
+            align-self: stretch;
+            padding: 0 14px;
+            border: 0;
+            border-right: 1px solid #cbd5d8;
+            color: #14584f;
+            background: #e9f8f5;
+            cursor: pointer;
+            font: inherit;
+            font-size: 0.88rem;
+            font-weight: 700;
+        }
+
+        #internshipForm #customFileBtn:hover {
+            background: #d8f1eb;
+        }
+
+        #internshipForm #fileName {
+            overflow: hidden;
+            padding: 0 12px;
+            color: #64748b;
+            font-size: 0.86rem;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        #internshipForm .consent-label {
+            display: flex;
+            gap: 9px;
+            align-items: flex-start;
+            padding: 12px 13px;
+            border: 1px solid #d7e4e2;
+            border-radius: 9px;
+            color: #3b4a4e;
+            background: #f8fcfb;
+            cursor: pointer;
+            font-size: 0.88rem;
+            line-height: 1.4;
+        }
+
+        #internshipForm .consent-label input {
+            flex: 0 0 auto;
+            margin-top: 3px;
+            accent-color: #159b87;
+        }
+
+        #internshipForm .submit-btn {
+            display: inline-flex;
+            min-height: 50px;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            border: 0;
+            border-radius: 9px;
+            color: #fff;
+            background: linear-gradient(135deg, #087f72, #18a88d);
+            box-shadow: 0 9px 18px rgba(8, 127, 114, 0.22);
+            cursor: pointer;
+            font: inherit;
+            font-weight: 800;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        #internshipForm .submit-btn:hover:not(:disabled) {
+            box-shadow: 0 12px 22px rgba(8, 127, 114, 0.28);
+            transform: translateY(-1px);
+        }
+
+        #internshipForm .submit-btn:disabled {
+            cursor: wait;
+            opacity: 0.72;
+        }
+
+        #internshipForm .submit-btn.is-loading::before {
+            width: 15px;
+            height: 15px;
+            border: 2px solid rgba(255, 255, 255, 0.55);
+            border-top-color: #fff;
+            border-radius: 50%;
+            content: "";
+            animation: internshipSpinner 0.7s linear infinite;
+        }
+
+        @keyframes internshipSpinner {
+            to { transform: rotate(360deg); }
+        }
+
+        .form-toast {
+            position: fixed;
+            z-index: 1200;
+            top: 20px;
+            left: 50%;
+            display: flex;
+            width: min(calc(100% - 32px), 540px);
+            gap: 11px;
+            align-items: flex-start;
+            padding: 14px 16px;
+            transform: translateX(-50%);
+            border: 1px solid #a7e8cb;
+            border-radius: 12px;
+            color: #145c3c;
+            background: #f0fff7;
+            box-shadow: 0 14px 35px rgba(0, 0, 0, 0.18);
+        }
+
+        .form-toast[hidden] {
+            display: none;
+        }
+
+        .form-toast--error {
+            border-color: #f4bbbb;
+            color: #941f1f;
+            background: #fff6f6;
+        }
+
+        .form-toast__icon {
+            display: grid;
+            flex: 0 0 25px;
+            width: 25px;
+            height: 25px;
+            place-items: center;
+            border-radius: 50%;
+            color: #fff;
+            background: #159b63;
+            font-weight: 800;
+        }
+
+        .form-toast--error .form-toast__icon {
+            background: #c0392b;
+        }
+
+        .form-toast__icon::before {
+            color: #fff;
+            content: "\2713";
+        }
+
+        .form-toast--error .form-toast__icon::before {
+            content: "!";
+        }
+
+        .form-toast__content {
+            flex: 1;
+        }
+
+        .form-toast__content strong,
+        .form-toast__content span {
+            display: block;
+        }
+
+        .form-toast__content span {
+            margin-top: 2px;
+            font-size: 0.87rem;
+            line-height: 1.35;
+        }
+
+        .form-toast__close {
+            width: 27px;
+            height: 27px;
+            padding: 0;
+            border: 0;
+            border-radius: 50%;
+            color: inherit;
+            background: transparent;
+            cursor: pointer;
+            font-size: 1.25rem;
+            line-height: 1;
+        }
+
+        .form-toast__close:hover {
+            background: rgba(0, 0, 0, 0.07);
+        }
+
+        @media (max-width: 520px) {
+            #formModal {
+                padding: 12px;
+            }
+
+            #internshipForm .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            #internshipForm,
+            #formModal .form-header {
+                padding: 20px;
+            }
+
+            #formModal .form-feedback {
+                margin: 16px 20px 0;
+            }
+        }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .blog-one--blog .row > [class*="col-"] {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .blog-one--blog .row > [class*="col-"] {
+        flex-basis: 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+
+@media (max-width: 767px) {
+    .blog-one--blog {
+        padding: 64px 0 24px;
+    }
+
+    .blog-one__single-img img {
+        height: 200px;
+    }
+
+    .blog-one__single-content {
+        min-height: 0;
+        padding: 24px 22px 26px;
+    }
+
+    .blog-one__single-content h2 {
+        margin-bottom: 22px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-one--blog .container {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+    .blog-one__single-img img {
+        height: 180px;
+    }
+
+    .blog-one__single-content {
+        padding: 21px 18px 22px;
+    }
+
+    .blog-one__single-content .btn-box {
+        gap: 10px;
+    }
+
+    .blog-one__single-content .btn-box a,
+    .blog-one__single-content .btn-box .details-btn {
+        flex: 1 1 120px;
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+}
+
+@media (max-width: 360px) {
+    .blog-one__single-content .btn-box a,
+    .blog-one__single-content .btn-box .details-btn {
+        flex-basis: 100%;
+    }
+}

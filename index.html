@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--====== Title ======-->
+    <title>CyberNexus</title>
+    <!--====== Google Fonts ======-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!--====== Favicon Icon ======-->
+    <link rel="icon" href="./img/faviconiconP.png" type="image/png" sizes="500x500">
+    <!--====== Bootstrap css ======-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--====== Jquery UI css ======-->
+    <link href="css/jquery-ui.min.css" rel="stylesheet">
+    <!--====== icon css ======-->
+    <link href="css/line-awesome.min.css" rel="stylesheet">
+    <link href="css/remixicon.css" rel="stylesheet">
+    <!--====== Animate  css ======-->
+    <link href="css/animate.min.css" rel="stylesheet">
+    <!--====== Swiper css ======-->
+    <link href="css/swiper.min.css" rel="stylesheet">
+    <!--====== Style css ======-->
+    <link href="scss/style.css" rel="stylesheet">
+
+    <!----------------icons------------------------------>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://icons8.com">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/line-awesome@1.3.0/dist/line-awesome/css/line-awesome.min.css">
+
+</head>
+
+<body>
+    <!-- Theme Switcher Start -->
+    <div class="switch-theme-mode">
+        <label id="switch" class="switch">
+            <input type="checkbox" onchange="toggleTheme()" id="slider">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <!-- Theme Switcher End -->
+
+    <!-- page wrapper Start -->
+    <div class="page-wrapper">
+        <!-- Header  Start -->
+        <header class="header-wrap style1">
+
+            <!------------------top header------------------------->
+            <div class="header-top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7">
+                            <div class="header-top-left">
+                                <div class="close-header-top xl-none">
+                                    <button type="button"><i class="las la-times"></i></button>
+                                </div>
+                                <div class="header-contact me-3">
+                                    <p class="mb-0"><i class="ri-map-pin-fill"></i> Nagpur, Maharashtra</p>
+                                </div>
+                               
+                                <div class="header-contact me-3"
+                                    style="border: none !important; padding-right: 0 !important;">
+                                    <a href="mailto:info@cybernexussolution.in">
+                                        <i class="ri-mail-send-line"></i>info@cybernexussolution.in
+                                    </a>
+                                </div>
+                                <div class="header-contact d-flex align-items-center">
+                                    <span class="text-white-50 me-3">|</span>
+                                    <a href="tel:+918308626961">
+                                        <i class="ri-phone-fill"></i> +91 8308626961
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5">
+                            <div class="header-top-right">
+                                <div class="lang_selctor style1">
+                                    <i class="ri-global-line"> </i>
+                                    <select>
+                                        <option value="1">English</option>
+                                    </select>
+                                </div>
+                                <div class="header-social">
+                                    <span>Follow us :</span>
+                                    <ul class="social-profile style3">
+                                        <li><a target="_blank" href="#"><i class="ri-facebook-fill"></i> </a></li>
+                                        <li><a target="_blank" href="https://linkedin.com"><i
+                                                    class="ri-linkedin-fill"></i> </a></li>
+                                        <li><a target="_blank" href="https://twitter.com"><i
+                                                    class="ri-twitter-fill"></i> </a></li>
+                                        <li><a target="_blank" href="https://instagram.com"><i
+                                                    class="ri-instagram-line"></i> </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 xl-none">
+                            <div class="header-search">
+                                <form action="#">
+                                    <div class="form-group">
+                                        <input type="search" placeholder="Search Here ..." aria-label="Search this page"
+                                            required>
+                                        <button type="submit"><i class="ri-search-eye-line"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!----------------------------Bottom header----------------------->
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-2 col-md-4 col-6 order-lg-1 order-md-1 order-1">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img class="logo-light" src="./img/secondlogo.jpg" alt="Image">
+                                    <!-- <img class="logo-dark" src="img/logo-white.png" alt="Image"> -->
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-3 col-6 order-lg-2 order-md-3 order-3">
+                            <div class="main-menu-wrap style1">
+                                <div class="menu-close xl-none">
+                                    <a href="javascript:void(0)"><i class="las la-times"></i></a>
+                                </div>
+                                <div id="menu" class="text-left">
+                                    <ul class="main-menu ">
+                                        <li><a href="index.html" class="active">HOME</a>
+                                        </li>
+                                        <li><a href="Aboutpage.html">ABOUT</a>
+                                        </li>
+                                        <li>
+                                            <a href="trainingandnternship.html">Training & Internships</a>
+                                        </li>
+                                        <li><a href="blogs.html">BLOGS</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mobile-bar-wrap">
+                                <div class="sidebar-menu xl-none">
+                                    <i class="ri-equalizer-line"></i>
+                                </div>
+                                <div class="mobile-top-bar xl-none">
+                                    <i class="ri-settings-3-line"></i>
+                                </div>
+                                <div class="mobile-menu xl-none">
+                                    <a href='javascript:void(0)'><i class="ri-menu-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-5  order-lg-3 order-md-2">
+                            <div class="header-menu-wrap">
+                                <div class="header-search md-none">
+                                    <form action="#">
+                                        <div class="form-group">
+                                            <input type="search" placeholder="Search Here ..." aria-label="Search this page" required>
+                                            <button type="submit"> <i class="ri-search-eye-line"></i> </button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="sidebar-menu md-none">
+                                    <i class="ri-equalizer-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="contact-popup">
+            <div class="contact-popup-title">
+                <button type="button" class="close-popup"> <i class="ri-close-fill"></i> </button>
+            </div>
+            <div class="contact-popup-wrap">
+                <div class="comp-info">
+                    <div class="comp-logo">
+                        <a href="index.html">
+                            <img class="logo-light" src="img/secondlogo.jpg" alt="Image">
+                            <img class="logo-dark" src="img/logo-white.png" alt="Image">
+                        </a>
+                    </div>
+                    <p class="comp-desc">Empowering students and professionals with industry-ready skills, practical training, and real-world internship experiences to launch successful tech careers.</p>
+                    <ul class="footer-contact-address">
+                        <li><a href="tel:8308626961"> <i class="ri-phone-line"></i>+91 8308626961</a></li>
+                        <li> <i class="ri-mail-send-fill"></i> <a
+                                href="mailto:info@cybernexussolution.in">info@cybernexussolution.in</a></li>
+                        <!-- <li> <i class="ri-earth-fill"></i> <a href="https://www.ecour.com">www.ecour.com</a></li> -->
+                        <li>
+                            <i class="ri-map-pin-fill"></i> 1st Floor, Plot No. 4, Shivdatta Apartment, Mankapur Ring Rd, Nagpur, Maharashtra 440022
+                        </li>
+                    </ul>
+                </div>
+                <div class="comp-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.961127608986!2d79.04113527479835!3d21.11411588484238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bf6ac8fe2581%3A0x64053ccc6c891b29!2sCYBERATHON!5e0!3m2!1sen!2sin!4v1699445004863!5m2!1sen!2sin"></iframe>
+                </div>
+            </div>
+        </div>
+        <!-- Header  end -->
+
+        <!-- Hero section start -->
+        <div class="hero-wrap style1 bg-f hero-bg-1">
+            <div class="hr-line"></div>
+            <div class="hr-line"></div>
+            <div class="hr-line"></div>
+            <div class="hr-line"></div>
+            <div class="overlay bg-black op-7"></div>
+            <div class="container">
+                <div class="hero-dot-shape md-none">
+                    <img src="img/dot-shape.png" alt="Image">
+                </div>
+                <div class="row">
+                    <div class="col-lg-7 col-md-8">
+                        <div class="hero-content">
+                            <h1>Explore Your Creativity
+                                With Best Courses</h1>
+                            <p>Unlock your creative potential with our best courses, designed for learners at every
+                                level. Learn practical skills from industry experts, build a strong portfolio, and turn
+                                your passion into a rewarding career.</p>
+                            <div class="hero-btn">
+                                <a href="#popular-courses" class="btn v1"> <i class="ri-eye-line"></i> View Courses</a>
+                                <a href="contact.html" class="btn v2"> <i class="ri-user-line"></i> Join For Free</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-img-wrap">
+                <div class="hero-ellipse-img">
+                    <img src="img/ellipse-img.jpg" alt="Image">
+                </div>
+                <!-- <img class="ellipse-shape" src="assets/img/hero/ellipse-shape.png" alt="Image"> -->
+            </div>
+        </div>
+        <!-- Hero section end -->
+
+        <!-- About Section Start -->
+        <section class="about-wrap  style1 ptb-100">
+            <div class="container">
+                <div class="row align-items-center gx-5">
+                    <div class="col-lg-6">
+                        <div class="about-img bg-f about-bg-1">
+                            <!-- <div class="about-circle-shape md-none">
+                                <img src="./img/circle-shape.png" alt="Image">
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <div class="section-title text-left style1">
+                                <span>About us</span>
+                                <h2>Welcome To CyberNexus</h2>
+                                <p>Empowering students and professionals with industry-ready skills, practical training, and real-world internship experiences to launch successful tech careers.</p>
+                                <ul class="about-features-list">
+                                    <li> <i class="ri-login-circle-line"></i> Administer With Case</li>
+                                    <li> <i class="ri-login-circle-line"></i> Save Time With Automation</li>
+                                    <li> <i class="ri-login-circle-line"></i> 5+ Courses</li>
+                                </ul>
+                                <h5>*We Have <span>10 Years</span> of Working Experience</h5>
+                                <a href="#popular-courses" class="btn v1"> <i class="ri-eye-line"></i> View Courses</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section end -->
+
+        <!----------------------top categories----------------------->
+        <section class="course-wrap top-categories pb-70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title style1 text-center mb-40">
+                            <!-- <span>Popular Courses</span>
+                            <h2>Our Popular Courses</h2> -->
+                            <span>Top Categories</span>
+                            <h2>Our Top Categories</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-md-center">
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="course-card style2">
+                            <div class="course-img">
+                                <a href="course-details.html"><img src="img/webdev.png" alt="Image"></a>
+                            </div>
+                            <div class="course-info">
+                                <!-- <span class="course-price">$95.50</span> -->
+                                <h3><a href="course-details.html">Web Development</a></h3>
+                                <div class="course-rating">
+                                    <p>Fast, responsive, and visually stunning websites built to represent your brand
+                                        and turn visitors into customers.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="course-card style2">
+                            <div class="course-img">
+                                <a href="course-details.html"><img src="img/Android.jpeg" alt="Image"></a>
+                            </div>
+                            <div class="course-info">
+                                <!-- <span class="course-price">$35.50</span> -->
+                                <h3><a href="course-details.html">Mobile Application</a></h3>
+                                <div class="course-rating">
+                                    <p>Our expert team builds smooth, user-friendly Android and iOS apps that bring your
+                                        ideas to life.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="course-card style2">
+                            <div class="course-img">
+                                <a href="course-details.html"><img src="img/UIUx.jpeg" alt="Image"></a>
+                            </div>
+                            <div class="course-info">
+                                <!-- <span class="course-price">$55.50</span> -->
+                                <h3><a href="course-details.html">UI/UX Design</a></h3>
+                                <div class="course-rating">
+                                </div>
+                                <p>We craft clean, intuitive designs that look great and make every user experience
+                                    simple and engaging.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="course-card style2">
+                            <div class="course-img">
+                                <a href="course-details.html"><img src="img/digitalmarketing.jpeg" alt="Image"></a>
+                            </div>
+                            <div class="course-info">
+                                <!-- <span class="course-price">$55.50</span> -->
+                                <h3><a href="course-details.html">Digital Marketing</a></h3>
+                                <div class="course-rating">
+                                  
+                                </div>
+                                <p>Grow your reach and sales with SEO, social media, and eCommerce strategies backed by
+                                    real results.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!---------------------close top categories------------------------>
+        <!-- Course Section start -->
+        <section class="course-wrap  pb-70" id="popular-courses">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title style1 text-center mb-40">
+                            <!-- <span>Top Categories</span>
+                            <h2>Our Top Categories</h2> -->
+                            <span>Popular Courses</span>
+                            <h2>Our Popular Courses</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-md-center">
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="course-card style1">
+                            <div class="course-img">
+                                <a href="course-details.html"><img src="img/course-1.jpg" alt="Image"></a>
+                            </div>
+                            <div class="course-info">
+                                <h3><a href="course-details.html">Full Stack Web Development with MERN</a></h3>
+                                <div class="course-rating">
+                                    <p>Master MongoDB, Express, React, and Node.js by building real-world projects. Your
+                                        fastest path from beginner to job-ready developer. </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="course-card style1">
+                            <div class="course-img">
+                                <a href="course-details.html"><img src="img/course-2.jpg" alt="Image"></a>
+                            </div>
+                            <div class="course-info">
+                                <h3><a href="course-details.html">Full Stack Web Development with PHP</a></h3>
+                                <div class="course-rating">
+                                    <p>Build complete web apps using PHP, Laravel, MySQL, and JavaScript. Learn both
+                                        frontend and backend with real projects.</p>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="course-card style1">
+                            <div class="course-img">
+                                <a href="course-details.html"><img src="img/course-3.jpg" alt="Image"></a>
+                            </div>
+                            <div class="course-info">
+                                <h3><a href="course-details.html">Full Stack Web Development with Java</a></h3>
+                                <div class="course-rating">
+                                    <p>Master Java, Spring Boot, React, and MySQL by building production-style projects.
+                                        Get ready for real software developer roles.</p>
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="course-card style1">
+                            <div class="course-img">
+                                <a href="course-details.html"><img src="img/course-4.jpg" alt="Image"></a>
+                            </div>
+                            <div class="course-info">
+                                <h3><a href="course-details.html">Full Stack Web Development with Python</a></h3>
+                                <div class="course-rating">
+                                    <p>Learn Python, Django, React, and PostgreSQL by building real-world web apps.
+                                        Clean code and industry-ready skills from day one.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Course Section End -->
+
+        <!-- Testimonial section Start -->
+        <section class="testimonial-wrap bg-f testimonial-bg-1 ptb-100">
+            <div class="overlay bg-midnight op-8"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title style2 mb-40 text-center">
+                            <span>Testimonials</span>
+                            <h2>Real Stories. Real Growth.</h2>
+                            <p class="testimonial-intro">Hear how our learners are turning their ambitions into real-world skills and opportunities.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="testimonial-slider-one swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item">
+                                        <div class="client-name">
+                                            <h5>Ruchika Raut</h5>
+                                            <ul class="rating">
+                                                <li> <i class="ri-star-fill"></i> </li>
+                                                <li> <i class="ri-star-fill"></i> </li>
+                                                <li> <i class="ri-star-fill"></i> </li>
+                                                <li> <i class="ri-star-fill"></i> </li>
+                                                <li> <i class="ri-star-line"></i> </li>
+                                            </ul>
+                                        </div>
+                                        <div class="client-quote">
+                                            <p>I completed my Cyberathon Technology  PVT.LTD internship, gaining professional growth through challenging, rewarding marketing projects.</p>
+                                        </div>
+                                        <div class="quote-icon">
+                                            <i class="ri-double-quotes-r"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item">
+                                        <div class="client-name">
+                                            <h5>Manoj Gedam</h5>
+                                            <ul class="rating">
+                                                <li> <i class="ri-star-fill"></i> </li>
+                                                <li> <i class="ri-star-fill"></i> </li>
+                                                <li> <i class="ri-star-fill"></i> </li>
+                                                <li> <i class="ri-star-fill"></i> </li>
+                                                <li> <i class="ri-star-line"></i> </li>
+                                            </ul>
+                                        </div>
+                                        <div class="client-quote">
+                                            <p>The support and mentorship provided were outstanding. My supervisor Devanand sir, was always available to provide guidence, feedback, and encouragement</p>
+                                        </div>
+                                        <div class="quote-icon">
+                                            <i class="ri-double-quotes-r"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item">
+                                        <div class="client-name">
+                                            <h5>Tushar Deshmukh</h5>
+                                            <ul class="rating">
+                                                <li> <i class="ri-star-fill"></i> </li>
+                                                <li> <i class="ri-star-fill"></i> </li>
+                                                <li> <i class="ri-star-fill"></i> </li>
+                                                <li> <i class="ri-star-fill"></i> </li>
+                                                <li> <i class="ri-star-line"></i> </li>
+                                            </ul>
+                                        </div>
+                                        <div class="client-quote">
+                                            <p>I was a great experience with cyberathon and it's team. I am glad to be the part of cyberathon technology pvt.Ltd team. Nice environment and nice people. </p>
+                                        </div>
+                                        <div class="quote-icon">
+                                            <i class="ri-double-quotes-r"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                     <div class="testimonial-item">
+                                        <div class="client-name">
+                                            <h5>Manoj Gedam</h5>
+                                            <ul class="rating">
+                                                <li> <i class="ri-star-fill"></i> </li>
+                                                <li> <i class="ri-star-fill"></i> </li>
+                                                <li> <i class="ri-star-fill"></i> </li>
+                                                <li> <i class="ri-star-fill"></i> </li>
+                                                <li> <i class="ri-star-line"></i> </li>
+                                            </ul>
+                                        </div>
+                                        <div class="client-quote">
+                                            <p>The support and mentorship provided were outstanding. My supervisor Devanand sir, was always available to provide guidence, feedback, and encouragement</p>
+                                        </div>
+                                        <div class="quote-icon">
+                                            <i class="ri-double-quotes-r"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="testimonial-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+        <!-- Footer  start -->
+        <footer class="footer-wrap site-footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-6">
+                            <div class="footer-widget site-footer__brand">
+                                <a href="index.html" class="footer-logo" aria-label="Cyberathon Nexus home">
+                                    <img src="img/secondlogo.jpg" alt="Cyberathon Nexus">
+                                </a>
+                                <p>Empowering careers through industry-ready training, internships, and technology
+                                    solutions.</p>
+                                <span class="site-footer__tagline">Learn. Build. Grow.</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-widget">
+                                <h2 class="footer-widget-title">Explore</h2>
+                                <ul class="footer-menu">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="Aboutpage.html">About Us</a></li>
+                                    <li><a href="trainingandnternship.html">Training &amp; Internship</a></li>
+                                    <li><a href="blogs.html">Blogs</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="footer-widget site-footer__contact">
+                                <h2 class="footer-widget-title">Get in touch</h2>
+                                <ul class="footer-contact-address">
+                                    <li>
+                                        <i class="ri-map-pin-line" aria-hidden="true"></i>
+                                        <span>1st Floor, Plot No. 4, Shivdatta Apartment, Mankapur Ring Rd, Nagpur,
+                                            Maharashtra 440022</span>
+                                    </li>
+                                    <!-- <li><i class="ri-phone-line" aria-hidden="true"></i><a href="tel: +917498641386"> +91 7498641386</a></li> -->
+                                    <li><i class="ri-phone-line" aria-hidden="true"></i><a href="tel: +918308626961"> +91 8308626961</a></li>
+                                    <li><i class="ri-mail-line" aria-hidden="true"></i><a
+                                            href="mailto:info@cybernexussolution.in">info@cybernexussolution.in</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="copyright-text">
+                        <p>&copy; 2026 Cyberathon Nexus. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer  end -->
+    </div>
+    <!-- Page wrapper end -->
+
+    <!-- Back-to-top button start -->
+    <a href="javascript:void(0)" class="back-to-top bounce"><i class="las la-arrow-up"></i></a>
+    <!-- Back-to-top button end -->
+
+    <!--====== jquery js ======-->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <!--====== jquery UI js ======-->
+    <script src="js/jquery-ui.min.js"></script>
+    <!--====== Bootstrap js ======-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <!--====== Swiper js ======-->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!--====== Fslightbox js ======-->
+    <script src="js/fslightbox.js"></script>
+    <!--====== Countdown js ======-->
+    <script src="js/countdown.js"></script>
+    <!--====== Main js ======-->
+    <script src="js/main.js"></script>
+</body>
+</html>

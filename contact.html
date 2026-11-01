@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--====== Title ======-->
+    <title>CyberNexus</title>
+
+    <!--====== Google Fonts ======-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="img/favicon.jpg" type="image/jpg">
+
+    <!--====== Bootstrap css ======-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--====== Jquery UI css ======-->
+    <link href="css/jquery-ui.min.css" rel="stylesheet">
+    <!--====== icon css ======-->
+    <link href="css/line-awesome.min.css" rel="stylesheet">
+    <link href="css/remixicon.css" rel="stylesheet">
+    <!--====== Animate  css ======-->
+    <link href="css/animate.min.css" rel="stylesheet">
+    <!--====== Swiper css ======-->
+    <link href="css/swiper.min.css" rel="stylesheet">
+    <!--====== Style css ======-->
+    <link href="scss/style.css" rel="stylesheet">
+
+
+
+    <!----------------icons------------------------------>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://icons8.com">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/line-awesome@1.3.0/dist/line-awesome/css/line-awesome.min.css">
+
+    <style>
+        /* * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        } */
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+
+        .contact-header {
+            text-align: center;
+            margin: 0 auto 45px;
+            max-width: 700px;
+        }
+
+        .contact-header h1 {
+            font-size: 2.25rem;
+            color: #0d233a;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .contact-header p {
+            color: #666;
+            font-size: 1rem;
+            margin-bottom: 0;
+        }
+
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-container {
+                padding: 60px 20px;
+            }
+
+            .contact-wrapper .info-side,
+            .contact-wrapper .form-side {
+                padding: 30px 24px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-header h1 {
+                font-size: 1.8rem;
+            }
+
+            .contact-container {
+                padding: 45px 16px;
+            }
+
+            .contact-wrapper .info-side,
+            .contact-wrapper .form-side {
+                padding: 25px 20px;
+            }
+        }
+
+        /* Info Side Details */
+        .info-side,
+        .form-side {
+            padding: 38px;
+            border-radius: 14px;
+        }
+
+        .info-side {
+            color: #fff;
+            background: linear-gradient(145deg, #0d233a, #164a68);
+            box-shadow: 0 18px 45px rgba(13, 35, 58, 0.16);
+        }
+
+        .info-side h2 {
+            font-size: 1.8rem;
+            color: #fff;
+            margin-bottom: 32px;
+            position: relative;
+        }
+
+        .info-side h2::after {
+            content: '';
+            width: 50px;
+            height: 3px;
+            background-color: #22c3a0;
+            position: absolute;
+            bottom: -12px;
+            left: 0;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 28px;
+        }
+
+        .info-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .info-item .icon {
+            background: rgba(34, 195, 160, 0.14);
+            color: #22c3a0;
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.35rem;
+            margin-right: 16px;
+            flex-shrink: 0;
+        }
+
+        .info-content h3 {
+            font-size: 1.1rem;
+            color: #fff;
+            margin-bottom: 7px;
+        }
+
+        .info-content p,
+        .info-content a {
+            color: rgba(255, 255, 255, 0.78);
+            text-decoration: none;
+            display: block;
+            line-height: 1.7;
+            overflow-wrap: anywhere;
+        }
+
+        .info-content a:hover {
+            color: #22c3a0;
+        }
+
+        /* Form Side Details */
+        .form-side {
+            background: #fff;
+            box-shadow: 0 18px 45px rgba(13, 35, 58, 0.09);
+        }
+
+        .form-side h2 {
+            font-size: 1.8rem;
+            color: #0d233a;
+            margin-bottom: 28px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 7px;
+            font-weight: 600;
+            color: #0d233a;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 13px 15px;
+            border: 1px solid #dce3e9;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .form-control:focus {
+            border-color: #22c3a0;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(34, 195, 160, 0.13);
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            min-height: 145px;
+        }
+
+        .submit-btn {
+            background-color: #22c3a0;
+            color: #fff;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.3s ease;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            background-color: #159e81;
+            transform: translateY(-2px);
+        }
+
+        /* Map Container */
+        .map-container {
+            margin-top: 35px;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 14px 38px rgba(13, 35, 58, 0.1);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 380px;
+            border: 0;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Theme Switcher Start -->
+    <div class="switch-theme-mode">
+        <label id="switch" class="switch">
+            <input type="checkbox" onchange="toggleTheme()" id="slider">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <!-- Theme Switcher End -->
+
+    <!-- page wrapper Start -->
+    <div class="page-wrapper">
+        <header class="header-wrap style1">
+            <!---------------------header top ------------------------->
+            <div class="header-top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7"> <!-- Content area thoda badhaya taaki space proper mile -->
+                            <div class="header-top-left">
+                                <div class="close-header-top xl-none">
+                                    <button type="button"><i class="las la-times"></i></button>
+                                </div>
+                                <!-- Nagpur Location Block -->
+                                <div class="header-contact me-3">
+                                    <p class="mb-0"><i class="ri-map-pin-fill"></i> Nagpur, Maharashtra</p>
+                                </div>
+                                <!-- Email Block: Inline CSS se iski right border/line ko remove kiya gaya hai -->
+                                <div class="header-contact me-3"
+                                    style="border: none !important; padding-right: 0 !important;">
+                                    <a href="mailto:info@cybernexussolution.in">
+                                        <i class="ri-mail-send-line"></i>info@cybernexussolution.in
+                                    </a>
+                                </div>
+                                <!-- Phone Number Block: Isse pehle separator bar (`|`) HTML se manual lagaya hai -->
+                                <div class="header-contact d-flex align-items-center">
+                                    <span class="text-white-50 me-3">|</span>
+                                    <a href="tel:+918308626961">
+                                        <i class="ri-phone-fill"></i> +91 8308626961
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5"> <!-- Right side block adjustment -->
+                            <div class="header-top-right">
+                                <div class="lang_selctor style1">
+                                    <i class="ri-global-line"> </i>
+                                    <select>
+                                        <option value="1">English</option>
+                                    </select>
+                                </div>
+                                <div class="header-social">
+                                    <span>Follow us :</span>
+                                    <ul class="social-profile style3">
+                                        <li><a target="_blank" href="#"><i class="ri-facebook-fill"></i> </a></li>
+                                        <li><a target="_blank" href="https://linkedin.com"><i
+                                                    class="ri-linkedin-fill"></i> </a></li>
+                                        <li><a target="_blank" href="https://twitter.com"><i
+                                                    class="ri-twitter-fill"></i> </a></li>
+                                        <li><a target="_blank" href="https://instagram.com"><i
+                                                    class="ri-instagram-line"></i> </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 xl-none">
+                            <div class="header-search">
+                                <form action="#">
+                                    <div class="form-group">
+                                        <input type="search" placeholder="Search Here ..." aria-label="Search this page"
+                                            required>
+                                        <button type="submit"><i class="ri-search-eye-line"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!---------------------header bottom--------------------->
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-2 col-md-4 col-6 order-lg-1 order-md-1 order-1">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img class="logo-light" src="./img/secondlogo.jpg" alt="Image">
+                                    <!-- <img class="logo-dark" src="img/logo-white.png" alt="Image"> -->
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-3 col-6 order-lg-2 order-md-3 order-3">
+                            <div class="main-menu-wrap style1">
+                                <div class="menu-close xl-none">
+                                    <a href="javascript:void(0)"><i class="las la-times"></i></a>
+                                </div>
+                                <div id="menu" class="text-left">
+                                    <ul class="main-menu ">
+                                        <li>
+                                            <a href="index.html">HOME</a>
+                                        </li>
+                                        <li>
+                                            <a href="Aboutpage.html">ABOUT</a>
+                                        </li>
+                                        <li>
+                                            <a href="trainingandnternship.html">Training & Internships</a>
+                                        </li>
+                                        <li><a href="blogs.html">BLOGS</a></li>
+                                        <li><a href="contact.html" class="active">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mobile-bar-wrap">
+                                <div class="sidebar-menu xl-none">
+                                    <i class="ri-equalizer-line"></i>
+                                </div>
+                                <div class="mobile-top-bar xl-none">
+                                    <i class="ri-settings-3-line"></i>
+                                </div>
+                                <div class="mobile-menu xl-none">
+                                    <a href='javascript:void(0)'><i class="ri-menu-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-5  order-lg-3 order-md-2">
+                            <div class="header-menu-wrap">
+                                <div class="header-search md-none">
+                                    <form action="#">
+                                        <div class="form-group">
+                                            <input type="search" placeholder="Search Here ..."
+                                                aria-label="Search this page" required>
+                                            <button type="submit"> <i class="ri-search-eye-line"></i> </button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="sidebar-menu md-none">
+                                    <i class="ri-equalizer-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!---------------sidebar----------------------------------------->
+        <div class="body_overlay"></div>
+        <div class="contact-popup">
+            <div class="contact-popup-title">
+                <button type="button" class="close-popup"> <i class="ri-close-fill"></i> </button>
+            </div>
+            <div class="contact-popup-wrap">
+                <div class="comp-info">
+                    <div class="comp-logo">
+                        <a href="index.html">
+                            <img class="logo-light" src="img/secondlogo.jpg" alt="Image">
+                            <img class="logo-dark" src="img/logo-white.png" alt="Image">
+                        </a>
+                    </div>
+                    <p class="comp-desc">Empowering students and professionals with industry-ready skills, practical
+                        training, and real-world internship experiences to launch successful tech careers.</p>
+                    <ul class="footer-contact-address">
+                        <li><a href="tel:8308626961"> <i class="ri-phone-line"></i>+91 8308626961</a></li>
+                        <li> <i class="ri-mail-send-fill"></i> <a
+                                href="mailto:info@cybernexussolution.in">info@cybernexussolution.in</a></li>
+                        <!-- <li> <i class="ri-earth-fill"></i> <a href="https://www.ecour.com">www.ecour.com</a></li> -->
+                        <li>
+                            <i class="ri-map-pin-fill"></i> 1st Floor, Plot No. 4, Shivdatta Apartment, Mankapur Ring
+                            Rd, Nagpur, Maharashtra 440022
+                        </li>
+                    </ul>
+                </div>
+                <div class="comp-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.961127608986!2d79.04113527479835!3d21.11411588484238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bf6ac8fe2581%3A0x64053ccc6c891b29!2sCYBERATHON!5e0!3m2!1sen!2sin!4v1699445004863!5m2!1sen!2sin"></iframe>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Breadcrumb start -->
+        <section class="breadcrumb-wrap bg-f br-bg-1">
+            <div class="overlay op-6 bg-black"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 col-md-10 offset-md-1">
+                        <div class="breadcrumb-title">
+                            <h2>Contact Us</h2>
+                            <ul class="breadcrumb-menu" aria-label="Breadcrumb">
+                                <li><a href="index.html">Home</a></li>
+                                <li aria-current="page">Contact Us</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Breadcrumb end -->
+
+        <main class="contact-container">
+            <div class="contact-header">
+                <h1>Let’s Start a Conversation</h1>
+                <p>Have a question about our training or internships? Our team is ready to help you take the next step.
+                </p>
+            </div>
+
+            <div class="contact-wrapper">
+                <!-- Left Side: Contact Information -->
+                <div class="info-side">
+                    <h2>Get In Touch</h2>
+
+                    <!-- Office Address -->
+                    <div class="info-item">
+                        <div class="icon"><i class="ri-map-pin-line" aria-hidden="true"></i></div>
+                        <div class="info-content">
+                            <h3>Office Address</h3>
+                            <p>1st Floor, Plot No. 4, Shivdatta Apartment, Mankapur Ring Rd, opposite petrol pump,
+                                Parsodi, Subhash Nagar, Trimurtee Nagar, Nagpur, Maharashtra 440022</p>
+                        </div>
+                    </div>
+
+                    <!-- Phone Numbers -->
+                    <div class="info-item">
+                        <div class="icon"><i class="ri-phone-line" aria-hidden="true"></i></div>
+                        <div class="info-content">
+                            <h3>Call Us</h3>
+                            <!-- <a href="tel:+917498641386">+91 7498641386</a> -->
+                            <a href="tel:+917796090450">+91 8308626961</a>
+                        </div>
+                    </div>
+
+                    <!-- Email Addresses -->
+                    <div class="info-item">
+                        <div class="icon"><i class="ri-mail-line" aria-hidden="true"></i></div>
+                        <div class="info-content">
+                            <h3>Email Address</h3>
+                            <a href="mailto:info@cybernexussolution.in">info@cybernexussolution.in</a>
+                            <!-- <a href="mailto:contact.cyberathon@gmail.com">contact.cyberathon@gmail.com</a> -->
+                        </div>
+                    </div>
+
+                    <!-- Working Hours -->
+                    <div class="info-item">
+                        <div class="icon"><i class="ri-time-line" aria-hidden="true"></i></div>
+                        <div class="info-content">
+                            <h3>Office Timing</h3>
+                            <p>Monday - Saturday: 10:00 AM - 07:00 PM</p>
+                            <p>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Contact Form -->
+                <div class="form-side">
+                    <h2>Send a Message</h2>
+                    <form action="https://formsubmit.co/info@cybernexussolution.in" method="POST">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" class="form-control"
+                                placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-control"
+                                placeholder="Enter your email address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-control"
+                                placeholder="Enter your phone number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" class="form-control"
+                                placeholder="How can we help you?" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Submit Now</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Google Map Section (Trimurti Nagar, Nagpur Location) -->
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.961127608986!2d79.04113527479835!3d21.11411588484238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bf6ac8fe2581%3A0x64053ccc6c891b29!2sCYBERATHON!5e0!3m2!1sen!2sin!4v1699445004863!5m2!1sen!2sin"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </main>
+        <footer class="footer-wrap site-footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-6">
+                            <div class="footer-widget site-footer__brand">
+                                <a href="index.html" class="footer-logo" aria-label="Cyberathon Nexus home">
+                                    <img src="img/secondlogo.jpg" alt="Cyberathon Nexus">
+                                </a>
+                                <p>Empowering careers through industry-ready training, internships, and technology
+                                    solutions.</p>
+                                <span class="site-footer__tagline">Learn. Build. Grow.</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-widget">
+                                <h2 class="footer-widget-title">Explore</h2>
+                                <ul class="footer-menu">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="Aboutpage.html">About Us</a></li>
+                                    <li><a href="trainingandnternship.html">Training &amp; Internship</a></li>
+                                    <li><a href="blogs.html">Blogs</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="footer-widget site-footer__contact">
+                                <h2 class="footer-widget-title">Get in touch</h2>
+                                <ul class="footer-contact-address">
+                                    <li>
+                                        <i class="ri-map-pin-line" aria-hidden="true"></i>
+                                        <span>1st Floor, Plot No. 4, Shivdatta Apartment, Mankapur Ring Rd, Nagpur,
+                                            Maharashtra 440022</span>
+                                    </li>
+                                    <!-- <li><i class="ri-phone-line" aria-hidden="true"></i><a href="tel: +917498641386"> +91 7498641386</a></li> -->
+                                    <li><i class="ri-phone-line" aria-hidden="true"></i><a href="tel: +918308626961">
+                                            +91 8308626961</a></li>
+                                    <li><i class="ri-mail-line" aria-hidden="true"></i><a
+                                            href="mailto:info@cybernexussolution.in">info@cybernexussolution.in</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="copyright-text">
+                        <p>&copy; 2026 Cyberathon Nexus. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
